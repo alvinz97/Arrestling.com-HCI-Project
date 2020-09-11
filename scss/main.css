@@ -4,5 +4,45 @@
 }
 
 body {
-  background-color: red;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#navbar {
+  border-bottom: 1px solid #dddddd;
+}
+
+#navbar .navbar-brand {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #180b8a;
+}
+
+#navbar .navbar-nav .nav-item {
+  margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+  #navbar .navbar-brand {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #navbar .navbar-nav .nav-item {
+    margin-right: 7px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 992px) {
+  #navbar .navbar-brand {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  #navbar .navbar-nav .nav-item {
+    margin-right: 10px;
+  }
 }
