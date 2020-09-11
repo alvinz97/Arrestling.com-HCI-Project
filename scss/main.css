@@ -98,6 +98,39 @@ body .full-border {
   padding: 0.30rem;
 }
 
+#delivery-info-section #cart-icon .cart-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #180b8a;
+}
+
+#delivery-info-section #cart-icon .m-auto {
+  position: relative;
+  top: 11px;
+  left: 17px;
+}
+
+#delivery-info-section #cart-icon .cart-circle:hover {
+  background-color: #1904d8;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#delivery-info-section #cart-icon .cart-circle:hover i {
+  font-size: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#delivery-info-section #cart-icon .cart-circle:hover .m-auto {
+  top: 13px;
+  left: 16px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 /* Responsive media queries  */
 @media (max-width: 1200px) {
   #navbar .navbar-brand {
