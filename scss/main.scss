@@ -85,6 +85,23 @@ body {
         font-weight: 500;
         color: $color-ash;
     }
+
+    .clearfix {
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .item-name {
+        font-size: 10px;
+    }
+
+    table {
+        font-size: 10px;
+        td {
+            padding: 0.30rem;
+        }
+    }
 }
 
 

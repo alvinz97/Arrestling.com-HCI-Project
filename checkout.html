@@ -12,63 +12,13 @@
 <body>
     
     <div class="container-fluid mr-0 pr-0 ml-0 pl-0" id="navbar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" href="#">Arrestling</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                aria-haspopup="true" aria-expanded="false">
-                                Courses
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Schedule</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Training Groups</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Weapon Throwing </a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Store</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <!-- Navigation Bar  -->
+        
     </div>
 
     <div class="container mt-3" id="delivery-info-section">
         <div class="row">
+            <!-- Left section  -->
             <div class="col-lg-8 col-md-8 col-sm-12 col-12">
                 <form action="" method="post">
                     <span class="section-header">Delivery Information</span>
@@ -143,14 +93,81 @@
                         </div>
                     </div>
 
-                   <button type="submit" class="primary-btn float-right"> Continue to Pay</button>
+                <button type="submit" class="primary-btn float-right"> Continue to Pay</button>
 
                 </form>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
 
+            <!-- Right section  -->
+            <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <!-- Order summer  -->
+                <span class="section-header">Order Summery</span>
+
+                <div class="clearfix mt-3">
+                    <div class="float-left">
+                        <p>Sub Total (1 Item)</p>
+                    </div>
+                    <div class="float-right">
+                        <p>$ 255.00 </p>
+                    </div>
+                </div>
+
+                <div class="clearfix">
+                    <div class="float-left">
+                        <p>Shipping fee</p>
+                    </div>
+                    <div class="float-right">
+                        <p>$ 85.20 </p>
+                    </div>
+                </div>
+
+                <form action="" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-9 col-9">
+                            <input type="text" name="coupon" class="form-control" id="coupon" data-rule="minlen:4"
+                                placeholder="Enter Coupon Code"/>
+                        </div>
+                        <div class="form-group col-md-3 col-3">
+                            <button type="submit" class="primary-btn float-right"> Apply</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Package Info  -->
+
+                <div class="divider"></div>
+                <div class="mt-3"></div>
+                
+                <span class="section-header">Package Info</span>
+
+                <div class="row mt-3">
+                    <div class="col-lg-4 col-md 4 col-4">
+                        <img src="images/image.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-lg-8 col-md 8 col-8">
+                        <p class="item-name">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi, dignissimos!</p>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td>Mark</td>
+                                    <td>Otto</td>
+                                    <td>@mdo</td>
+                                </tr>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>Thornton</td>
+                                    <td>@fat</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid mr-0 pr-0 ml-0 pl-0" id="footer">
+        <!-- Footer  -->
     </div>
 
     <script src="vendor/jquery/jquery-3.5.1.min.js"></script>

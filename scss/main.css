@@ -82,6 +82,22 @@ body .full-border {
   color: #949494;
 }
 
+#delivery-info-section .clearfix p {
+  font-size: 12px;
+}
+
+#delivery-info-section .item-name {
+  font-size: 10px;
+}
+
+#delivery-info-section table {
+  font-size: 10px;
+}
+
+#delivery-info-section table td {
+  padding: 0.30rem;
+}
+
 /* Responsive media queries  */
 @media (max-width: 1200px) {
   #navbar .navbar-brand {
