@@ -3,8 +3,18 @@
   padding: 0px;
 }
 
+/* Colors */
+/* Content */
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body .full-border {
+  border: 1px solid #a5a5a5;
+}
+
+.divider {
+  border: 1px solid #d4d4d4;
 }
 
 #navbar {
@@ -24,6 +34,55 @@ body {
   margin-right: 10px;
 }
 
+#delivery-info-section form label {
+  font-size: 13px;
+}
+
+#delivery-info-section form input {
+  border-radius: 0%;
+  font-size: 13px;
+}
+
+#delivery-info-section form ::-webkit-input-placeholder {
+  color: #949494;
+}
+
+#delivery-info-section form :-ms-input-placeholder {
+  color: #949494;
+}
+
+#delivery-info-section form ::-ms-input-placeholder {
+  color: #949494;
+}
+
+#delivery-info-section form ::placeholder {
+  color: #949494;
+}
+
+#delivery-info-section form .required {
+  color: #FF0000;
+}
+
+#delivery-info-section form .primary-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 15px 4px 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+#delivery-info-section .section-header {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#delivery-info-section .section-description {
+  font-size: 11px;
+  font-weight: 500;
+  color: #949494;
+}
+
+/* Responsive media queries  */
 @media (max-width: 1200px) {
   #navbar .navbar-brand {
     font-size: 25px;
