@@ -5,16 +5,19 @@
 
 /* Colors */
 
+$color-primary: rgb(24, 11, 138);
+
 $color-red: #FF0000;
 $color-green: #00FF00;
 $color-blue: #0000FF;
 $color-white: #ffffff;
 $color-black: #000000;
 
+
 $color-ash: #949494;
 $color-light-ash: #d4d4d4;
+$footer-bg: rgb(16, 9, 73);
 
-$color-primary: rgb(24, 11, 138);
 
 /* Content */
 
@@ -24,14 +27,19 @@ body {
     .full-border {
         border: 1px solid rgb(165, 165, 165);
     }
+
+    a:hover {
+        text-decoration: none;
+    }
 }
 
 .divider  {
     border: 1px solid $color-light-ash;
 }
 
+ /* Nav bar */
 #navbar {
-    border-bottom: 1px solid rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(221, 221, 221);;
 
     .navbar-brand {
         font-size: 30px;
@@ -48,6 +56,8 @@ body {
         }
     }
 }
+
+/* Delivery Section  */
 
 #delivery-info-section {
     form {
@@ -105,21 +115,22 @@ body {
 
     #cart-icon {
         .cart-circle {
-            width: 50px;
-            height: 50px;
+            width: 60px;
+            height: 60px;
             border-radius: 50%;
             border: none;
-            background-color: $color-primary;
+            background-color: $color-ash;
+            box-shadow: 0px 10px 30px 0px rgba(19, 19, 18, 0.555);
         }
 
         .m-auto {
             position: relative;
-            top: 11px;
-            left: 17px;
+            top: 16px;
+            left: 22px;
         }
 
         .cart-circle:hover {
-            background-color: rgb(25, 4, 216);
+            background-color: rgb(184, 184, 184);
             transition: all 0.5s ease-in-out;
 
             i {
@@ -128,16 +139,38 @@ body {
             }
 
             .m-auto {
-                top: 13px;
-                left: 16px;
+                top: 17px;
+                left: 21px;
                 transition: all 0.5s ease-in-out;
             }
         }
     }
 }
 
+/* Footer  */
 
+#footer {
+    color: $color-white;
+    .container-fluid {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $footer-bg;
+        list-style: none;
+        list-style-type: none;
+    }
 
+    #footer-header {
+        h4 {
+            font-size: 18px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid $color-white;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
 
 
 
