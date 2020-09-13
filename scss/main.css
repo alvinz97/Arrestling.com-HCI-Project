@@ -10,7 +10,7 @@ Common Area | Common Area | Common Area | Common Area |
 Colors | Colors | Colors | Colors | Colors | Colors | Colors
 =========================================================*/
 /*=========================================================
-Content | Content | Content | Content | Content | Content 
+Body Content | Body Content | Body Content | Body Content | 
 =========================================================*/
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,6 +22,10 @@ body .full-border {
 
 body a:hover {
   text-decoration: none;
+}
+
+.relative {
+  position: relative;
 }
 
 .divider {
@@ -185,7 +189,40 @@ Chack-out page Delivery Section | Chack-out page Delivery Section
 /*=========================================================
 Chack-out page End | Chack-out page End | Chack-out page End
 =========================================================*/
-/* Responsive media queries  */
+/*=========================================================
+Index page End | Index page End | Index page End | Index
+=========================================================*/
+#home {
+  background: url(../images/main-bg.jpg) center;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+#home h1 {
+  color: #ffffff;
+}
+
+#home .overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(4, 7, 29, 0.644);
+}
+
+#home .fullscreen {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*=========================================================
+Responsive | Responsive | Responsive | Responsive | Responsive
+=========================================================*/
 @media (max-width: 1200px) {
   #navbar .navbar-brand {
     font-size: 25px;
