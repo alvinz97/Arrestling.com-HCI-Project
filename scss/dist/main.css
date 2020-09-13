@@ -16,7 +16,7 @@ body a:hover {
 }
 
 .divider {
-  border: 1px solid #d4d4d4;
+  border-bottom: 2px solid #d4d4d4;
 }
 
 /* Nav bar */
@@ -49,7 +49,7 @@ body a:hover {
 #delivery-info-section form .required {
   color: #FF0000;
 }
-#delivery-info-section form .primary-btn {
+#delivery-info-section .primary-btn {
   background-color: #000000;
   color: #ffffff;
   padding: 4px 15px 4px 15px;
@@ -102,6 +102,9 @@ body a:hover {
   top: 17px;
   left: 21px;
   transition: all 0.5s ease-in-out;
+}
+#delivery-info-section p {
+  font-size: 12px;
 }
 
 /* Footer  */
