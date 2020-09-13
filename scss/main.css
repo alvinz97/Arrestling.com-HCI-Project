@@ -199,7 +199,7 @@ Index page End | Index page End | Index page End | Index
   height: 100vh;
 }
 
-#home h1 {
+#home h1, #home h3 {
   color: #ffffff;
 }
 
@@ -218,6 +218,42 @@ Index page End | Index page End | Index page End | Index
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+#home .fullscreen .squre-box {
+  border: 1px solid #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15px 5px 15px 5px;
+}
+
+#home .fullscreen i {
+  display: none;
+}
+
+#home .fullscreen .banner-content .squre-box:hover {
+  line-height: 1.8;
+  background-color: #9c9c9c8a;
+  letter-spacing: 1.5px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#home .fullscreen .banner-content .squre-box:hover i {
+  display: inline;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#home .fullscreen .banner-content .squre-box::after {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#home .fullscreen .banner-content .squre-box::after i {
+  display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 /*=========================================================

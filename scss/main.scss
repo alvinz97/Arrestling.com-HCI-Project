@@ -213,7 +213,7 @@ Index page End | Index page End | Index page End | Index
     background-position: center center;
     height: 100vh;
 
-    h1 {
+    h1, h3 {
         color: $color-white;
     }
 
@@ -232,6 +232,40 @@ Index page End | Index page End | Index page End | Index
         top: 50%;
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
+
+        .squre-box {
+            border: 1px solid $color-white;
+            width: 60%;
+            margin: 0 auto;
+            padding: 15px 5px 15px 5px;
+        }
+
+        i {
+            display: none;
+        }
+
+        .banner-content {
+            .squre-box:hover {
+                line-height: 1.8;
+                background-color: #9c9c9c8a;
+                letter-spacing: 1.5px;
+                transition: all 0.5s ease-in-out;
+
+                i {
+                    display: inline;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+
+            .squre-box::after {
+                transition: all 0.5s ease-in-out;
+
+                i {
+                    display: none;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
     }
 }
 
