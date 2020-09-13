@@ -1,9 +1,15 @@
+/*=========================================================
+Common Area | Common Area | Common Area | Common Area | 
+=========================================================*/
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
-/* Colors */
+/*=========================================================
+Colors | Colors | Colors | Colors | Colors | Colors | Colors
+=========================================================*/
 
 $color-primary: rgb(24, 11, 138);
 
@@ -19,7 +25,9 @@ $color-light-ash: #d4d4d4;
 $footer-bg: rgb(16, 9, 73);
 
 
-/* Content */
+/*=========================================================
+Content | Content | Content | Content | Content | Content 
+=========================================================*/
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -37,7 +45,10 @@ body {
     border-bottom: 2px solid $color-light-ash;
 }
 
- /* Nav bar */
+/*=========================================================
+Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar 
+=========================================================*/
+
 #navbar {
     border-bottom: 1px solid rgb(221, 221, 221);;
 
@@ -57,7 +68,42 @@ body {
     }
 }
 
-/* Delivery Section  */
+/*=========================================================
+Footer | Footer | Footer | Footer | Footer | Footer | Footer
+=========================================================*/
+
+#footer {
+    color: $color-white;
+    .container-fluid {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: $footer-bg;
+        list-style: none;
+        list-style-type: none;
+    }
+
+    #footer-header {
+        h4 {
+            font-size: 18px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid $color-white;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+
+/*=========================================================
+Common Area End | Common Area End | Common Area End
+=========================================================*/
+
+
+/*=========================================================
+Chack-out page Delivery Section | Chack-out page Delivery Section
+=========================================================*/
 
 #delivery-info-section {
     form {
@@ -150,30 +196,9 @@ body {
     }
 }
 
-/* Footer  */
-
-#footer {
-    color: $color-white;
-    .container-fluid {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: $footer-bg;
-        list-style: none;
-        list-style-type: none;
-    }
-
-    #footer-header {
-        h4 {
-            font-size: 18px;
-            padding-bottom: 12px;
-            border-bottom: 2px solid $color-white;
-        }
-
-        p {
-            font-size: 14px;
-        }
-    }
-}
+/*=========================================================
+Chack-out page End | Chack-out page End | Chack-out page End
+=========================================================*/
 
 
 
@@ -182,10 +207,9 @@ body {
 
 
 
-
-
-
-/* Responsive media queries  */
+/*=========================================================
+Responsive | Responsive | Responsive | Responsive | Responsive
+=========================================================*/
 
 @media (max-width: 1200px) {
     #navbar {
