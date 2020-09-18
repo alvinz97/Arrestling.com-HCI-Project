@@ -26,13 +26,13 @@ body::-webkit-scrollbar-track {
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-  background: #023766;
+  background: #005299;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-  background: #005299;
+  background: #023766;
 }
 
 /*=========================================================
@@ -262,7 +262,7 @@ Chack-out page End | Chack-out page End | Chack-out page End
 /*=========================================================
 Index page End | Index page End | Index page End | Index
 =========================================================*/
-#home {
+#index-page #home {
   background: url(../images/main_bg.jpg) center;
   background-size: cover;
   background-position: center center;
@@ -270,15 +270,16 @@ Index page End | Index page End | Index page End | Index
   background-blend-mode: overlay;
 }
 
-#home h1 {
+#index-page #home h1 {
   font-size: 2.9rem;
+  font-weight: 900;
 }
 
-#home h1, #home h3 {
+#index-page #home h1, #index-page #home h3 {
   color: #ffffff;
 }
 
-#home .overlay {
+#index-page #home .overlay {
   position: absolute;
   left: 0;
   right: 0;
@@ -287,7 +288,7 @@ Index page End | Index page End | Index page End | Index
   background-color: rgba(0, 8, 53, 0.719);
 }
 
-#home .fullscreen {
+#index-page #home .fullscreen {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -295,25 +296,25 @@ Index page End | Index page End | Index page End | Index
   transform: translate(-50%, -50%);
 }
 
-#home .fullscreen .squre-box {
+#index-page #home .fullscreen .squre-box {
   border: 1px solid #ffffff;
   width: 60%;
   margin: 0 auto;
   padding: 15px 5px 15px 5px;
 }
 
-#home .fullscreen .squre-box-2 {
+#index-page #home .fullscreen .squre-box-2 {
   display: none;
   border: 1px solid #ffffff;
   margin: 0 auto;
   padding: 10px 5px 10px 5px;
 }
 
-#home .fullscreen i {
+#index-page #home .fullscreen i {
   display: none;
 }
 
-#home .fullscreen .banner-content .squre-box:hover {
+#index-page #home .fullscreen .banner-content .squre-box:hover {
   line-height: 1.8;
   background-color: #9c9c9c8a;
   letter-spacing: 1.5px;
@@ -321,24 +322,24 @@ Index page End | Index page End | Index page End | Index
   transition: all 0.5s ease-in-out;
 }
 
-#home .fullscreen .banner-content .squre-box:hover i {
+#index-page #home .fullscreen .banner-content .squre-box:hover i {
   display: inline;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#home .fullscreen .banner-content .squre-box::after {
+#index-page #home .fullscreen .banner-content .squre-box::after {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#home .fullscreen .banner-content .squre-box::after i {
+#index-page #home .fullscreen .banner-content .squre-box::after i {
   display: none;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-#home .container .custom-card {
+#index-page #custom_card_section .custom-card {
   border-radius: 10px;
   text-align: center;
   padding: 30px;
@@ -347,33 +348,47 @@ Index page End | Index page End | Index page End | Index
           box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
 }
 
-#home .container .custom-card h6 {
+#index-page #custom_card_section .custom-card h6 {
   font-weight: 700;
 }
 
-#home .container .custom-card p {
-  font-size: .5rem;
+#index-page #custom_card_section .custom-card p {
+  font-size: .75rem;
 }
 
-#home #home-about-right h4 {
+#index-page #home_about_right {
+  margin-top: 50px;
+}
+
+#index-page #home_about_right ul li {
   font-size: 20px;
+  font-weight: 600;
+  padding-top: 10px;
 }
 
-#home #course-carousel-slider .controls-top {
-  height: 50px;
+#index-page .header-text {
+  margin: 0 auto;
+  font-size: 25px;
+  font-weight: 900;
+  border-bottom: 2px solid #000000;
+  max-width: 10%;
+  text-transform: uppercase;
 }
 
-#home #course-carousel-slider .controls-top a {
-  font-size: 50px;
-}
-
-#home #course-carousel-slider .controls-top a i {
-  font-size: 50px;
+#index-page #course_carousel_slider .controls-top a i {
+  font-size: 30px;
+  color: #023766;
 }
 
 /*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/
+@media (max-width: 1427px) {
+  #index-page .header-text {
+    max-width: 12%;
+  }
+}
+
 @media (max-width: 1200px) {
   #navbar .navbar-brand {
     font-size: 25px;
@@ -383,6 +398,9 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #navbar .navbar-nav .nav-item {
     margin-right: 7px;
     font-size: 13px;
+  }
+  #index-page .header-text {
+    max-width: 13%;
   }
 }
 
@@ -395,12 +413,21 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   }
 }
 
+@media (max-width: 1105px) {
+  #index-page .header-text {
+    max-width: 15%;
+  }
+}
+
 @media (max-width: 1006px) {
   #home h1 {
     font-size: 2.4rem;
   }
   #home h3 {
     font-size: 1.3rem;
+  }
+  #index-page .header-text {
+    max-width: 18%;
   }
 }
 
@@ -442,6 +469,33 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   }
 }
 
+@media (max-width: 798px) {
+  #index-page .header-text {
+    max-width: 20%;
+  }
+}
+
+@media (max-width: 718px) {
+  #index-page .header-text {
+    max-width: 20%;
+    font-size: 23px;
+  }
+}
+
+@media (max-width: 661px) {
+  #index-page .header-text {
+    max-width: 21%;
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 575px) {
+  #index-page .header-text {
+    max-width: 22%;
+    font-size: 19px;
+  }
+}
+
 @media (max-width: 505px) {
   #home h1 {
     font-size: 1.8rem;
@@ -460,6 +514,10 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #home .fullscreen .squre-box-2 {
     display: block;
   }
+  #index-page .header-text {
+    max-width: 23%;
+    font-size: 17px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -468,5 +526,9 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   }
   #home h3 {
     font-size: 1.3rem;
+  }
+  #index-page .header-text {
+    max-width: 30%;
+    font-size: 19px;
   }
 }

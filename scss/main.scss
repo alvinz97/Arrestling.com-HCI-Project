@@ -42,13 +42,13 @@ body::-webkit-scrollbar-track {
 
 /* Handle */
 body::-webkit-scrollbar-thumb {
-    background: #023766;
+    background: #005299;
     border-radius: 5px;
 }
 
 /* Handle on hover */
 body::-webkit-scrollbar-thumb:hover {
-    background: #005299;
+    background: #023766;
 }
 
 /*=========================================================
@@ -274,109 +274,123 @@ Chack-out page End | Chack-out page End | Chack-out page End
 Index page End | Index page End | Index page End | Index
 =========================================================*/
 
-#home {
-    background: url(../images/main_bg.jpg) center;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-    background-blend-mode: overlay;
-
-    h1 {
-        font-size: 2.9rem;
-    }
-
-    h1, h3 {
-        color: $color-white;
-    }
-
-    .overlay {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        background-color: rgba(0, 8, 53, 0.719);
-    }
-
-    .fullscreen {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-        .squre-box {
-            border: 1px solid $color-white;
-            width: 60%;
-            margin: 0 auto;
-            padding: 15px 5px 15px 5px;
+#index-page {
+    #home {
+        background: url(../images/main_bg.jpg) center;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        background-blend-mode: overlay;
+    
+        h1 {
+            font-size: 2.9rem;
+            font-weight: 900;
         }
-        .squre-box-2 {
-            display: none;
-            border: 1px solid $color-white;
-            margin: 0 auto;
-            padding: 10px 5px 10px 5px;
+    
+        h1, h3 {
+            color: $color-white;
         }
-
-        i {
-            display: none;
+    
+        .overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 8, 53, 0.719);
         }
-
-        .banner-content {
-            .squre-box:hover {
-                line-height: 1.8;
-                background-color: #9c9c9c8a;
-                letter-spacing: 1.5px;
-                transition: all 0.5s ease-in-out;
-
-                i {
-                    display: inline;
+    
+        .fullscreen {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    
+            .squre-box {
+                border: 1px solid $color-white;
+                width: 60%;
+                margin: 0 auto;
+                padding: 15px 5px 15px 5px;
+            }
+            .squre-box-2 {
+                display: none;
+                border: 1px solid $color-white;
+                margin: 0 auto;
+                padding: 10px 5px 10px 5px;
+            }
+    
+            i {
+                display: none;
+            }
+    
+            .banner-content {
+                .squre-box:hover {
+                    line-height: 1.8;
+                    background-color: #9c9c9c8a;
+                    letter-spacing: 1.5px;
                     transition: all 0.5s ease-in-out;
+    
+                    i {
+                        display: inline;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+    
+                .squre-box::after {
+                    transition: all 0.5s ease-in-out;
+    
+                    i {
+                        display: none;
+                        transition: all 0.5s ease-in-out;
+                    }
                 }
             }
-
-            .squre-box::after {
-                transition: all 0.5s ease-in-out;
-
-                i {
-                    display: none;
-                    transition: all 0.5s ease-in-out;
-                }
-            }
         }
     }
-
-    .container {
+    
+    #custom_card_section {
         .custom-card {
             border-radius: 10px;
             text-align: center;
             padding: 30px;
             background-color: white;
             box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
-
+    
             h6 {
                 font-weight: 700;
             }
-            
+    
             p {
-                font-size: .5rem;
+                font-size: .75rem;
             }
         }
     }
-
-    #home-about-right {
-        h4 {
+    
+    #home_about_right {
+        margin-top: 50px;
+        ul li {
             font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
         }
     }
-
-    #course-carousel-slider {
+    
+    .header-text {
+        margin: 0 auto;
+        font-size: 25px;
+        font-weight: 900;
+        border-bottom: 2px solid $color-black;
+        max-width: 10%;
+        text-transform: uppercase;
+    }
+    
+    #course_carousel_slider {
         .controls-top {
-            height: 50px;
             a {
-                font-size: 50px;
                 i {
-                    font-size: 50px;
+                    font-size: 30px;
+                    color: #023766;
                 }
             }
         }
@@ -386,10 +400,17 @@ Index page End | Index page End | Index page End | Index
 
 
 
-
 /*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/
+
+@media (max-width: 1427px) {
+    #index-page {
+        .header-text {
+            max-width: 12%;
+        }
+    }
+}
 
 @media (max-width: 1200px) {
     #navbar {
@@ -406,6 +427,12 @@ Responsive | Responsive | Responsive | Responsive | Responsive
             }
         }
     }
+
+    #index-page {
+        .header-text {
+            max-width: 13%;
+        }
+    }
 }
 
 @media (max-width: 1124px) {
@@ -420,6 +447,15 @@ Responsive | Responsive | Responsive | Responsive | Responsive
     }
 }
 
+@media (max-width: 1105px) {
+
+    #index-page {
+        .header-text {
+            max-width: 15%;
+        }
+    }
+}
+
 @media (max-width: 1006px) {
     #home {
         h1 {
@@ -428,6 +464,11 @@ Responsive | Responsive | Responsive | Responsive | Responsive
 
         h3 {
             font-size: 1.3rem;
+        }
+    }
+    #index-page {
+        .header-text {
+            max-width: 18%;
         }
     }
 }
@@ -483,6 +524,41 @@ Responsive | Responsive | Responsive | Responsive | Responsive
     }
 }
 
+@media (max-width: 798px) {
+    #index-page {
+        .header-text {
+            max-width: 20%;
+        }
+    }
+}
+
+@media (max-width: 718px) {
+    #index-page {
+        .header-text {
+            max-width: 20%;
+            font-size: 23px;
+        }
+    }
+}
+
+@media (max-width: 661px) {
+    #index-page {
+        .header-text {
+            max-width: 21%;
+            font-size: 21px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    #index-page {
+        .header-text {
+            max-width: 22%;
+            font-size: 19px;
+        }
+    }
+}
+
 @media (max-width:505px) {
     #home {
         h1 {
@@ -505,6 +581,13 @@ Responsive | Responsive | Responsive | Responsive | Responsive
             }
         }
     }
+
+    #index-page {
+        .header-text {
+            max-width: 23%;
+            font-size: 17px;
+        }
+    }
 }
 
 @media (max-width:400px) {
@@ -515,6 +598,13 @@ Responsive | Responsive | Responsive | Responsive | Responsive
 
         h3 {
             font-size: 1.3rem;
+        }
+    }
+
+    #index-page {
+        .header-text {
+            max-width: 30%;
+            font-size: 19px;
         }
     }
 }
