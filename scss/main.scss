@@ -354,9 +354,19 @@ Index page End | Index page End | Index page End | Index
             background-color: white;
             box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
 
+            h6 {
+                font-weight: 700;
+            }
+            
             p {
                 font-size: .5rem;
             }
+        }
+    }
+
+    #home-about-right {
+        h4 {
+            font-size: 20px;
         }
     }
 }
