@@ -26,6 +26,32 @@ $footer-bg: #023766;
 
 
 /*=========================================================
+Scrollbar style | Scrollbar style | Scrollbar style 
+=========================================================*/
+
+/* width */
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 5px;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #023766;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #005299;
+}
+
+/*=========================================================
 Body Content | Body Content | Body Content | Body Content | 
 =========================================================*/
 
@@ -137,7 +163,7 @@ Common Area End | Common Area End | Common Area End
 
 
 /*=========================================================
-Chack-out page Delivery Section | Chack-out page Delivery Section
+Chack-out page | Chack-out page | Chack-out page | Chack-out page
 =========================================================*/
 
 #delivery-info-section {
@@ -249,10 +275,15 @@ Index page End | Index page End | Index page End | Index
 =========================================================*/
 
 #home {
-    background: url(../images/main-bg.jpg) center;
+    background: url(../images/main_bg.jpg) center;
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    background-blend-mode: overlay;
+
+    h1 {
+        font-size: 2.9rem;
+    }
 
     h1, h3 {
         color: $color-white;
@@ -264,7 +295,7 @@ Index page End | Index page End | Index page End | Index
         right: 0;
         top: 0;
         bottom: 0;
-        background-color: rgba(4, 7, 29, 0.644);
+        background-color: rgba(0, 8, 53, 0.719);
     }
 
     .fullscreen {
@@ -279,6 +310,12 @@ Index page End | Index page End | Index page End | Index
             width: 60%;
             margin: 0 auto;
             padding: 15px 5px 15px 5px;
+        }
+        .squre-box-2 {
+            display: none;
+            border: 1px solid $color-white;
+            margin: 0 auto;
+            padding: 10px 5px 10px 5px;
         }
 
         i {
@@ -305,6 +342,20 @@ Index page End | Index page End | Index page End | Index
                     display: none;
                     transition: all 0.5s ease-in-out;
                 }
+            }
+        }
+    }
+
+    .container {
+        .custom-card {
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
+
+            p {
+                font-size: .5rem;
             }
         }
     }
@@ -335,6 +386,30 @@ Responsive | Responsive | Responsive | Responsive | Responsive
     }
 }
 
+@media (max-width: 1124px) {
+    #home {
+        h1 {
+            font-size: 2.6rem;
+        }
+
+        h3 {
+            font-size: 1.50rem;
+        }
+    }
+}
+
+@media (max-width: 1006px) {
+    #home {
+        h1 {
+            font-size: 2.4rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
+        }
+    }
+}
+
 @media (max-width: 992px) {
     #navbar {
         .navbar-brand {
@@ -347,6 +422,77 @@ Responsive | Responsive | Responsive | Responsive | Responsive
             .nav-item {
                 margin-right: 10px;
             }
+        }
+    }
+}
+@media (max-width: 929px) {
+    #home {
+        h1 {
+            font-size: 2.2rem;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+        }
+    }
+}
+
+@media (max-width: 852px) {
+    #home {
+        h1 {
+            font-size: 2.0rem;
+        }
+
+        h3 {
+            font-size: 1.0rem;
+        }
+
+        .fullscreen {
+            top: 40%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            .squre-box {
+                width: 80%;
+                padding: 10px 5px 10px 5px;
+            }
+        }
+    }
+}
+
+@media (max-width:505px) {
+    #home {
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+        }
+        .fullscreen {
+            top: 40%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+
+            .squre-box {
+                display: none;
+            }
+            .squre-box-2 {
+                display: block;
+            }
+        }
+    }
+}
+
+
+@media (max-width:400px) {
+    #home {
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h3 {
+            font-size: 1.3rem;
         }
     }
 }
