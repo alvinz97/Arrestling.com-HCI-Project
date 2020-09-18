@@ -22,7 +22,7 @@ $color-black: #000000;
 
 $color-ash: #949494;
 $color-light-ash: #d4d4d4;
-$footer-bg: rgb(16, 9, 73);
+$footer-bg: #023766;
 
 
 /*=========================================================
@@ -77,9 +77,16 @@ Footer | Footer | Footer | Footer | Footer | Footer | Footer
 
 #footer {
     color: $color-white;
+
+    a {
+        color: $color-white;
+    }
+    a:hover {
+        color: $color-blue;
+    }
     .container-fluid {
         padding-top: 50px;
-        padding-bottom: 50px;
+        // padding-bottom: 50px;
         background-color: $footer-bg;
         list-style: none;
         list-style-type: none;
@@ -94,6 +101,31 @@ Footer | Footer | Footer | Footer | Footer | Footer | Footer
 
         p {
             font-size: 14px;
+        }
+    }
+    #quick-links {
+        ul li {
+            margin-top: 10px;
+            list-style: none;
+        }
+    }
+    #footer-contact {
+        .row {
+            margin-bottom: 15px;
+            p {
+                margin-bottom: 1px;
+            }
+        }
+    }
+
+    #credit-section  {
+        background-color: #032d53;
+        align-items: center;
+        justify-content: center;
+
+        div {
+            padding-top: 20px;
+            padding-bottom: 10px;
         }
     }
 }
@@ -133,6 +165,15 @@ Chack-out page Delivery Section | Chack-out page Delivery Section
         padding: 4px 15px 4px 15px;
         border-radius: 5px;
         border: none;
+    }
+
+    .primary-btn-custome {
+        background-color: $color-black;
+        color: $color-white;
+        padding: 4px 15px 4px 15px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
     }
     .section-header {
         font-size: 15px;

@@ -59,10 +59,17 @@ Footer | Footer | Footer | Footer | Footer | Footer | Footer
   color: #ffffff;
 }
 
+#footer a {
+  color: #ffffff;
+}
+
+#footer a:hover {
+  color: #0000FF;
+}
+
 #footer .container-fluid {
   padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #100949;
+  background-color: #023766;
   list-style: none;
   list-style-type: none;
 }
@@ -75,6 +82,34 @@ Footer | Footer | Footer | Footer | Footer | Footer | Footer
 
 #footer #footer-header p {
   font-size: 14px;
+}
+
+#footer #quick-links ul li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+#footer #footer-contact .row {
+  margin-bottom: 15px;
+}
+
+#footer #footer-contact .row p {
+  margin-bottom: 1px;
+}
+
+#footer #credit-section {
+  background-color: #032d53;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#footer #credit-section div {
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 /*=========================================================
@@ -118,6 +153,15 @@ Chack-out page Delivery Section | Chack-out page Delivery Section
   padding: 4px 15px 4px 15px;
   border-radius: 5px;
   border: none;
+}
+
+#delivery-info-section .primary-btn-custome {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 15px 4px 15px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
 }
 
 #delivery-info-section .section-header {
