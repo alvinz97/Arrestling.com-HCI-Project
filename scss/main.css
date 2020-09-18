@@ -359,6 +359,18 @@ Index page End | Index page End | Index page End | Index
   font-size: 20px;
 }
 
+#home #course-carousel-slider .controls-top {
+  height: 50px;
+}
+
+#home #course-carousel-slider .controls-top a {
+  font-size: 50px;
+}
+
+#home #course-carousel-slider .controls-top a i {
+  font-size: 50px;
+}
+
 /*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/

@@ -369,6 +369,18 @@ Index page End | Index page End | Index page End | Index
             font-size: 20px;
         }
     }
+
+    #course-carousel-slider {
+        .controls-top {
+            height: 50px;
+            a {
+                font-size: 50px;
+                i {
+                    font-size: 50px;
+                }
+            }
+        }
+    }
 }
 
 
@@ -435,6 +447,7 @@ Responsive | Responsive | Responsive | Responsive | Responsive
         }
     }
 }
+
 @media (max-width: 929px) {
     #home {
         h1 {
@@ -493,7 +506,6 @@ Responsive | Responsive | Responsive | Responsive | Responsive
         }
     }
 }
-
 
 @media (max-width:400px) {
     #home {
