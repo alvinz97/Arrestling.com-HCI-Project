@@ -55,6 +55,17 @@ body a:hover {
   border-bottom: 2px solid #d4d4d4;
 }
 
+.divider-1 {
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.custom-card {
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
+}
+
 /*=========================================================
 Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar 
 =========================================================*/
@@ -208,7 +219,7 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
 Chack-out page End | Chack-out page End | Chack-out page End
 =========================================================*/
 /*=========================================================
-Index page End | Index page End | Index page End | Index
+Index page start | Index page start | Index page start | Index
 =========================================================*/
 #index-page #home {
   background: url(../images/main_bg.jpg) center;
@@ -305,6 +316,38 @@ Index page End | Index page End | Index page End | Index
   color: #023766;
 }
 
+/*=========================================================
+Index page End | Index page End | Index page End | Index
+=========================================================*/
+/*=========================================================
+Track page Start | Track page Start | Track page Start | Track
+=========================================================*/
+#track .custom-card img {
+  width: 100px;
+  height: 100px;
+}
+#track .custom-card .delivery-header h5 {
+  color: #023766;
+  font-weight: 600;
+}
+#track .custom-card .delivery-header p {
+  font-size: 13px;
+}
+#track #tracking-form .primary-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 15px 4px 15px;
+  border-radius: 5px;
+  border: none;
+}
+#track #tracking-form .form-row input {
+  border-radius: 0%;
+  font-size: 13px;
+}
+
+/*=========================================================
+Track page End | Track page End | Track page End | Track
+=========================================================*/
 /*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/

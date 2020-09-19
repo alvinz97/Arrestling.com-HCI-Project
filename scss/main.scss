@@ -70,10 +70,20 @@ body {
 .relative {
     position: relative;
 }
+
 .divider  {
     border-bottom: 2px solid $color-light-ash;
 }
 
+.divider-1  {
+    border-bottom: 1px solid $color-light-ash;
+}
+.custom-card {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
+}
 /*=========================================================
 Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar 
 =========================================================*/
@@ -271,7 +281,7 @@ Chack-out page End | Chack-out page End | Chack-out page End
 =========================================================*/
 
 /*=========================================================
-Index page End | Index page End | Index page End | Index
+Index page start | Index page start | Index page start | Index
 =========================================================*/
 
 #index-page {
@@ -396,6 +406,95 @@ Index page End | Index page End | Index page End | Index
         }
     }
 }
+
+/*=========================================================
+Index page End | Index page End | Index page End | Index
+=========================================================*/
+
+
+/*=========================================================
+Track page Start | Track page Start | Track page Start | Track
+=========================================================*/
+
+
+#track {
+    .custom-card {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+        .delivery-header {
+            h5 {
+                color: $footer-bg;
+                font-weight: 600;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+        .delivery-body {
+        }
+    }
+
+    #tracking-form {
+        .primary-btn {
+            background-color: $color-black;
+            color: $color-white;
+            padding: 4px 15px 4px 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .form-row {
+            input {
+                border-radius: 0%;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+/*=========================================================
+Track page End | Track page End | Track page End | Track
+=========================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

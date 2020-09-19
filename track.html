@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="scss/main.css">
-    <title>Templete </title>
+    <title>Track Your Order </title>
 </head>
 
 <body>
@@ -72,6 +72,81 @@
     <!-- Navigation Bar End-->
 
     <!-- Body Content Start-->
+
+    <div class="container mt-4" id="track">
+        <div class="row">
+            <!-- Left Side  -->
+            <div class="col-lg-8 col-md-8 col-sm-12 mt-3">
+                <div class="custom-card">
+                    <div class="delivery-header">
+                        <p>Estimated delivery: Jun 12 - Jul 01</p>
+                    </div>
+                    <div class="delivery-body">
+                        <div class="row text-center">
+                            <div class="col-lg-4 col-4">
+                                <img src="images/logos/track/track_01.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <img src="images/logos/track/track_02.png" alt="">
+                            </div>
+                            <div class="col-lg-4 col-4">
+                                <img src="images/logos/track/track_03.gif" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="custom-card mt-3">
+                    <div class="delivery-header">
+                        <h5>Delivering</h5>
+                        <p>Departed country of origin</p>
+                    </div>
+
+                    <div class="divider-1"></div>
+
+                    <div class="delivery-body">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                
+                            </div>
+                            <div class="col-lg-8">
+
+                            </div>
+                            <div class="col-lg-2">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- Right Side  -->
+            <div class="col-lg-4 col-md-4 col-sm-12 mt-3">
+                <div class="custom-card">
+                    <div class="delivery-header">
+                        <p>Tracking Code</p>
+                    </div>
+
+                    <form action="" method="post" id="tracking-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-12">
+                                <input type="text" name="coupon" class="form-control" id="coupon" data-rule="minlen:4"
+                                    placeholder="Paste Tracking Code Here" />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12 col-12">
+                                <button type="submit" class="btn-block primary-btn"> Track Order</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Body Content End-->
 
