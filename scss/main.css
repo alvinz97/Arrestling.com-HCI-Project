@@ -446,6 +446,37 @@ Track page Start | Track page Start | Track page Start | Track
   margin-bottom: 5px;
 }
 
+#track .custom-card #ad-section {
+  padding: 0%;
+}
+
+#track .custom-card #ad-section .close-btn {
+  right: 5px;
+  position: absolute;
+  top: 5px;
+  cursor: pointer;
+}
+
+#track .custom-card #ad-section .close-btn :hover {
+  color: #FF0000;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#track .custom-card #ad-section .close-btn i {
+  font-size: 25px;
+}
+
+#track .custom-card #ad-section img {
+  height: 100%;
+  width: 100%;
+  border: 1px solid #949494;
+}
+
+#track .custom-card #ad-section #ad-text {
+  display: none;
+}
+
 #track #tracking-form .primary-btn {
   background-color: #000000;
   color: #ffffff;

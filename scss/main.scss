@@ -470,6 +470,36 @@ Track page Start | Track page Start | Track page Start | Track
                 }
             }
         }
+        #ad-section {
+            padding: 0%;
+
+            .close-btn {
+                right: 5px;
+                position: absolute;
+                top: 5px;
+                cursor: pointer;
+
+                :hover {
+                    color: $color-red;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                i {
+                    font-size: 25px;
+                }
+
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                border: 1px solid $color-ash;
+            }
+
+            #ad-text {
+                display: none;
+            }
+        }
     }
 
     #tracking-form {
