@@ -333,6 +333,33 @@ Track page Start | Track page Start | Track page Start | Track
 #track .custom-card .delivery-header p {
   font-size: 13px;
 }
+#track .custom-card .delivery-body ul li .shipment-discription {
+  font-size: 16px;
+}
+#track .custom-card .delivery-body ul li .time-zoon {
+  font-size: 12px;
+  color: #949494;
+}
+#track .custom-card .delivery-body ul li .final {
+  color: #f70000b6;
+}
+#track .custom-card .delivery-body #country-name-section button {
+  color: #ffffff;
+  padding: 4px 15px 4px 15px;
+  border-radius: 5px;
+  border: none;
+}
+#track .custom-card .delivery-body #country-name-section .country-btn-destinantion {
+  background-color: rgba(209, 39, 39, 0.699);
+}
+#track .custom-card .delivery-body #country-name-section .country-btn-origin {
+  background-color: #26d4ba;
+}
+#track .custom-card .delivery-body #country-name-section p {
+  font-size: 12px;
+  color: rgba(59, 59, 59, 0.867);
+  margin-bottom: 5px;
+}
 #track #tracking-form .primary-btn {
   background-color: #000000;
   color: #ffffff;
@@ -452,6 +479,11 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #index-page .header-text {
     max-width: 22%;
     font-size: 19px;
+  }
+
+  #track .delivery-body #delivery-state {
+    position: relative;
+    left: 20px;
   }
 }
 @media (max-width: 505px) {

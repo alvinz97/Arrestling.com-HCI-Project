@@ -22,6 +22,7 @@ $color-black: #000000;
 
 $color-ash: #949494;
 $color-light-ash: #d4d4d4;
+$color-light-red: #f70000b6;
 $footer-bg: #023766;
 
 
@@ -432,6 +433,43 @@ Track page Start | Track page Start | Track page Start | Track
                 font-size: 13px;
             }
         }
+
+        .delivery-body {
+            ul {
+                li {
+                    .shipment-discription {
+                        font-size: 16px;
+                    }
+                    .time-zoon {
+                        font-size: 12px;
+                        color: $color-ash;
+                    }
+                    .final {
+                        color: $color-light-red;
+                    }
+                }
+            }
+
+            #country-name-section {
+                button {
+                    color: $color-white;
+                    padding: 4px 15px 4px 15px;
+                    border-radius: 5px;
+                    border: none;
+                }
+                .country-btn-destinantion {
+                    background-color: rgba(209, 39, 39, 0.699);
+                }
+                .country-btn-origin {
+                    background-color: rgb(38, 212, 186);
+                }
+                p {
+                    font-size: 12px;
+                    color: rgba(59, 59, 59, 0.867);
+                    margin-bottom: 5px;
+                }
+            }
+        }
     }
 
     #tracking-form {
@@ -652,6 +690,15 @@ Responsive | Responsive | Responsive | Responsive | Responsive
         .header-text {
             max-width: 22%;
             font-size: 19px;
+        }
+    }
+
+    #track {
+        .delivery-body {
+            #delivery-state {
+                position: relative;
+                left: 20px;
+            }
         }
     }
 }
