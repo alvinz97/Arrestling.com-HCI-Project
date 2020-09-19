@@ -1,13 +1,4 @@
 /*=========================================================
-Common Area | Common Area | Common Area | Common Area | 
-=========================================================*/
-
-* {
-    margin: 0px;
-    padding: 0px;
-}
-
-/*=========================================================
 Colors | Colors | Colors | Colors | Colors | Colors | Colors
 =========================================================*/
 
@@ -23,7 +14,66 @@ $color-black: #000000;
 $color-ash: #949494;
 $color-light-ash: #d4d4d4;
 $color-light-red: #f70000b6;
+$color-dark-green: #00ad00;
 $footer-bg: #023766;
+
+
+
+/*=========================================================
+Common Area | Common Area | Common Area | Common Area | 
+=========================================================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#cart-icon {
+    position: fixed;
+    background: #007cba;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50px;
+    right: 25px;
+    bottom: 25px;
+    transition: background 0.5s ease-in-out;
+    box-shadow: 0px 10px 30px 0px rgba(19, 19, 18, 0.555);
+
+    i {
+        margin-top: 10px;
+        font-size: 24px;
+        padding-top: 6px;
+    } 
+
+    :hover {
+        margin-top: 7px;
+        color: #fff;
+        font-size: 28px;
+        transition: all 0.5s ease-in-out;
+
+    }
+}
+
+.relative {
+    position: relative;
+}
+
+.divider {
+    border-bottom: 2px solid $color-light-ash;
+}
+
+.divider-1 {
+    border-bottom: 1px solid $color-light-ash;
+}
+
+.custom-card {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
+}
 
 
 /*=========================================================
@@ -68,23 +118,7 @@ body {
     }
 }
 
-.relative {
-    position: relative;
-}
 
-.divider  {
-    border-bottom: 2px solid $color-light-ash;
-}
-
-.divider-1  {
-    border-bottom: 1px solid $color-light-ash;
-}
-.custom-card {
-    border-radius: 10px;
-    padding: 20px;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
-}
 /*=========================================================
 Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar 
 =========================================================*/
@@ -237,39 +271,6 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         font-size: 10px;
         td {
             padding: 0.30rem;
-        }
-    }
-
-    #cart-icon {
-        .cart-circle {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            border: none;
-            background-color: $color-ash;
-            box-shadow: 0px 10px 30px 0px rgba(19, 19, 18, 0.555);
-        }
-
-        .m-auto {
-            position: relative;
-            top: 16px;
-            left: 22px;
-        }
-
-        .cart-circle:hover {
-            background-color: rgb(184, 184, 184);
-            transition: all 0.5s ease-in-out;
-
-            i {
-                font-size: 20px;
-                transition: all 0.5s ease-in-out;
-            }
-
-            .m-auto {
-                top: 17px;
-                left: 21px;
-                transition: all 0.5s ease-in-out;
-            }
         }
     }
     p {
@@ -445,7 +446,7 @@ Track page Start | Track page Start | Track page Start | Track
                         color: $color-ash;
                     }
                     .final {
-                        color: $color-light-red;
+                        color: $color-dark-green;
                     }
                 }
             }
