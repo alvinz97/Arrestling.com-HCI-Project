@@ -525,10 +525,36 @@ Search page Start | Search page Start | Search page Start
             top: 3px;
             right: 17px;
             button {
-                background-color: #fff;
+                background-color: transparent;
                 border: none;
             }
         }
+    }
+
+    #course-item-section {
+        .course-custom-card {
+            padding: 0%;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
+
+            .course-details {
+                padding: 5px 0;
+                p {
+                    margin: 0%;
+                }
+                .title {
+                    font-size: 15px;
+                }
+
+                .price {
+                    margin-top: 3px;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+
     }
 }
 
