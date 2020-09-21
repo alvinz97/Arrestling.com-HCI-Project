@@ -477,6 +477,24 @@ Track page Start | Track page Start | Track page Start | Track
 }
 
 /*=========================================================
+Search page Start | Search page Start | Search page Start
+=========================================================*/
+#search-page form input {
+  border-radius: 0%;
+}
+
+#search-page form .search-icon {
+  position: absolute;
+  top: 3px;
+  right: 17px;
+}
+
+#search-page form .search-icon button {
+  background-color: #fff;
+  border: none;
+}
+
+/*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/
 @media (max-width: 1427px) {
