@@ -225,6 +225,21 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         }
 
     }
+
+    .main-success-message {
+        display: none;
+        border-radius: 0%;
+        border: 1px solid $color-green;
+        color: $color-green;
+    }
+
+    #devivery-form-submit {
+        .validation {
+            color: red;
+            font-size: 11px;
+        }
+    }
+
     .primary-btn {
         background-color: $color-black;
         color: $color-white;

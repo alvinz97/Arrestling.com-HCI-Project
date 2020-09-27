@@ -79,18 +79,24 @@
         <div class="row">
             <!-- Left section  -->
             <div class="col-lg-8 col-md-8 col-sm-12 col-12">
-                <form action="" method="post">
+                <form action="" method="post" id="devivery-form-submit">
                     <span class="section-header">Delivery Information</span>
                     <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil velit illo, numquam ipsam iusto voluptatum </p>
+
+                    <div class="main-success-message text-center"><p class="text-succes-msg"></p></div>
 
                     <div class="form-row">
                         <div class="form-group col-md-8">
                             <label for="">First Name <span class="required"> * </span></label>
-                            <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="name" class="form-control" id="name" data-rule="required" data-msg="Please enter your name" />
+                            <p class="validation"></p>
+
                         </div>
                         <div class="form-group col-md-4">
                             <label for="">Phone Number <span class="required"> * </span></label>
-                            <input type="text" class="form-control" name="phone" id="phone" data-rule="required" data-msg="Please enter a valid email" />
+                            <input type="text" class="form-control" name="phone" id="phone" data-rule="phone" data-msg="Please enter a valid phone" />
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
@@ -98,24 +104,31 @@
                         <div class="form-group col-md-12">
                             <label for="">Address <span class="required"> * </span></label>
                             <input type="text" name="address" class="form-control" id="address"
-                                placeholder="Street address, apartment, floor, etc." data-rule="required" data-msg="Please enter at least 4 chars" />
+                                placeholder="Street address, apartment, floor, etc." data-rule="required" data-msg="Please enter your address" />
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-8">
-                            <input type="text" name="city" class="form-control" id="city" data-rule="minlen:8" data-msg="Please enter at least 4 chars" placeholder="City"/>
+                            <input type="text" name="city" class="form-control" id="city" placeholder="City"/>
+                            <p class="validation"></p>
+
                         </div>
                         <div class="form-group col-md-4">
-                            <input type="text" class="form-control" name="zipCode" id="zipCode" data-rule="minlen:6"
-                                data-msg="Please enter a valid email" placeholder="Zip code" />
+                            <input type="text" class="form-control" name="zipCode" id="zipCode" placeholder="Zip code" />
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
                     <div class="form-row">
                         <div class="form-group col-md-12">
-                            <input type="text" name="address" class="form-control" id="address"
-                                placeholder="State" data-rule="required" data-msg="Please enter at least 4 chars" />
+                            <input type="text" name="state" class="form-control" id="state"
+                                placeholder="State"/>
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
@@ -130,12 +143,16 @@
                         <div class="form-group col-md-8">
                             <label for="">Card Holder's Name <span class="required"> * </span></label>
                             <input type="text" name="holderName" class="form-control" id="holderName" data-rule="minlen:4"
-                                data-msg="Please enter at least 4 chars" />
+                                data-msg="Please enter card holder name" />
+                            <p class="validation"></p>
+
                         </div>
                         <div class="form-group col-md-4">
                             <label for="">CVV <span class="required"> * </span></label>
                             <input type="text" class="form-control" name="cvv" id="cvv" data-rule="required"
-                                data-msg="Please enter a valid email" />
+                                data-msg="Please enter CVV number" />
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
@@ -143,16 +160,21 @@
                         <div class="form-group col-md-8">
                             <label for="">Card Number <span class="required"> * </span></label>
                             <input type="text" name="cardNumber" class="form-control" id="cardNumber"
-                                data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                data-rule="card" data-msg="Please enter valid 16 length card number" />
+                            <p class="validation"></p>
+
                         </div>
                         <div class="form-group col-md-4">
                             <label for="">Expired Date <span class="required"> * </span></label>
                             <input type="text" class="form-control" name="expiredDate" id="expiredDate" data-rule="required"
-                                data-msg="Please enter a valid email" />
+                                data-msg="Please enter expire date" />
+                            <p class="validation"></p>
+
                         </div>
                     </div>
 
-                <button type="submit" class="primary-btn float-right"> Continue to Pay</button>
+                <button type="submit" class="primary-btn float-right ml-5"> Continue to Pay</button>
+                <button type="reset" class="primary-btn float-right reset-btn">Reset</button>
 
                 </form>
             </div>

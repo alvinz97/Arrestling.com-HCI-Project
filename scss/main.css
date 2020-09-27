@@ -212,6 +212,18 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
   color: #FF0000;
 }
 
+#delivery-info-section .main-success-message {
+  display: none;
+  border-radius: 0%;
+  border: 1px solid #00FF00;
+  color: #00FF00;
+}
+
+#delivery-info-section #devivery-form-submit .validation {
+  color: red;
+  font-size: 11px;
+}
+
 #delivery-info-section .primary-btn {
   background-color: #000000;
   color: #ffffff;
