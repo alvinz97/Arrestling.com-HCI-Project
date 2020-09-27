@@ -40,6 +40,7 @@ Common Area | Common Area | Common Area | Common Area |
     bottom: 25px;
     transition: background 0.5s ease-in-out;
     box-shadow: 0px 10px 30px 0px rgba(19, 19, 18, 0.555);
+    z-index: 100;
 
     i {
         margin-top: 10px;
@@ -73,6 +74,15 @@ Common Area | Common Area | Common Area | Common Area |
     padding: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 10px 30px 0px rgba(167, 185, 131, 0.2);
+}
+
+#devivery-form-submit,
+#coupon-form-submit,
+#tracking-form {
+    .validation {
+        color: red;
+        font-size: 11px;
+    }
 }
 
 
@@ -153,7 +163,7 @@ Footer | Footer | Footer | Footer | Footer | Footer | Footer
         color: $color-white;
     }
     a:hover {
-        color: $color-blue;
+        color: rgb(2, 152, 252);
     }
     .container-fluid {
         padding-top: 50px;
@@ -231,13 +241,6 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         border-radius: 0%;
         border: 1px solid $color-green;
         color: $color-green;
-    }
-
-    #devivery-form-submit {
-        .validation {
-            color: red;
-            font-size: 11px;
-        }
     }
 
     .primary-btn {

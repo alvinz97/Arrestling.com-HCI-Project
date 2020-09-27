@@ -10,7 +10,7 @@
 
 AOS.init({
     // offset: 200,
-    // easing: 'ease-in-sine',
+    easing: 'ease-in-out',
     duration: 2000,
     delay: 50,
 });
@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
         var f = $(this).find('.form-group'),
             ferror = false,
             phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/i,
-            creditCard = /^(?:5[1-5][0-9]{14})$/i,
+            creditCard = /^(?:4[0-9]{12}(?:[0-9]{3})?)$/,
             emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
 
         f.children('input').each(function () { // run all inputs
@@ -134,6 +134,115 @@ jQuery(document).ready(function ($) {
 
     $('.reset-btn').click(function () {
         $('#devivery-form-submit .form-group .validation').text('');
+    });
+
+    // COUPON AREA 
+    $('#coupon-form-submit').submit(function () {
+        var f = $(this).find('.form-group'),
+            ferror = false;
+
+        f.children('input').each(function () { // run all inputs
+
+            var i = $(this); // current input
+            var rule = i.attr('data-rule');
+
+            if (rule !== undefined) {
+                var ierror = false; // error flag for current input
+                var pos = rule.indexOf(':', 0);
+                if (pos >= 0) {
+                    var exp = rule.substr(pos + 1, rule.length);
+                    rule = rule.substr(0, pos);
+                } else {
+                    rule = rule.substr(pos + 1, rule.length);
+                }
+
+                switch (rule) {
+                    case 'required':
+                        if (i.val() === '') {
+                            ferror = ierror = true;
+                        }
+                        break;
+                }
+                i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+            }
+        });
+
+        if (ferror) return false;
+        else var str = $(this).serialize();
+        var action = $(this).attr('action');
+        if (!action) {
+            action = 'includes/checkout.inc.php';
+        }
+
+        var coupon = $('#coupon').val();
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: {
+                coupon: coupon,
+                status: 'checkout'
+            },
+            success: function (data) {
+                
+            }
+        });
+        return false;
+    });
+
+
+    // TRACKING AREA 
+    $('#tracking-form').submit(function () {
+        var f = $(this).find('.form-group'),
+            ferror = false;
+
+        f.children('input').each(function () { // run all inputs
+
+            var i = $(this); // current input
+            var rule = i.attr('data-rule');
+
+            if (rule !== undefined) {
+                var ierror = false; // error flag for current input
+                var pos = rule.indexOf(':', 0);
+                if (pos >= 0) {
+                    var exp = rule.substr(pos + 1, rule.length);
+                    rule = rule.substr(0, pos);
+                } else {
+                    rule = rule.substr(pos + 1, rule.length);
+                }
+
+                switch (rule) {
+                    case 'required':
+                        if (i.val() === '') {
+                            ferror = ierror = true;
+                        }
+                        break;
+                }
+                i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+            }
+        });
+
+        if (ferror) return false;
+        else var str = $(this).serialize();
+        var action = $(this).attr('action');
+        if (!action) {
+            action = 'includes/tracking.inc.php';
+        }
+
+        var trackingCode = $('#trackingCode').val();
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: {
+                trackingCode: trackingCode,
+                status: 'tracking'
+            },
+            success: function (data) {
+
+            }
+        });
+        return false;
     });
 
 });
