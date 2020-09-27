@@ -106,12 +106,19 @@ Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar
   border-bottom: 1px solid #dddddd;
 }
 #navbar .navbar-brand {
-  font-size: 30px;
+  font-size: 35px;
+  font-family: Open Sans, Arial, sans-serif;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 800;
   margin-top: 5px;
   margin-bottom: 5px;
   color: #180b8a;
+}
+#navbar .navbar-nav {
+  font-size: 14px;
+}
+#navbar .navbar-nav .dropdown-menu {
+  z-index: 100;
 }
 #navbar .navbar-nav .nav-item {
   margin-right: 10px;
@@ -234,6 +241,7 @@ Index page start | Index page start | Index page start | Index
   background-position: center center;
   height: 100vh;
   background-blend-mode: overlay;
+  z-index: -1;
 }
 #index-page #home h1 {
   font-size: 2.9rem;
@@ -256,12 +264,14 @@ Index page start | Index page start | Index page start | Index
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  z-index: 10;
 }
 #index-page #home .fullscreen .squre-box {
   border: 1px solid #ffffff;
   width: 60%;
   margin: 0 auto;
   padding: 15px 5px 15px 5px;
+  z-index: 10;
 }
 #index-page #home .fullscreen .squre-box-2 {
   display: none;
