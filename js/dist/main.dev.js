@@ -21,6 +21,17 @@ jQuery(document).ready(function ($) {
   "use strict"; // CHECKOUT AREA 
 
   $('#devivery-form-submit').submit(function () {
+    var name = $('#name').val();
+    var phone = $('#phone').val();
+    var address = $('#address').val();
+    var city = $('#city').val();
+    var zipCode = $('#zipCode').val();
+    var state = $('#state').val();
+    var holderName = $('#holderName').val();
+    var city = $('#cvv').val();
+    var cardNumber = $('#cardNumber').val();
+    var cvv = $('#cvv').val();
+    var expiredDate = $('#expiredDate').val();
     var f = $(this).find('.form-group'),
         ferror = false,
         phoneno = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/i,
@@ -81,6 +92,14 @@ jQuery(document).ready(function ($) {
             break;
         }
 
+        if (cvv.length > 3) {
+          $("#delivery-info-section .cvv").text("Please enter 3 digits only");
+        }
+
+        if (cvv.match(/^[0-9]+$/) == null) {
+          $("#delivery-info-section .cvv").text("Please enter digits only");
+        }
+
         i.next('.validation').html(ierror ? i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input' : '').show('blind');
       }
     });
@@ -89,22 +108,6 @@ jQuery(document).ready(function ($) {
 
     if (!action) {
       action = 'includes/checkout.inc.php';
-    }
-
-    var name = $('#name').val();
-    var phone = $('#phone').val();
-    var address = $('#address').val();
-    var city = $('#city').val();
-    var zipCode = $('#zipCode').val();
-    var state = $('#state').val();
-    var holderName = $('#holderName').val();
-    var city = $('#cvv').val();
-    var cardNumber = $('#cardNumber').val();
-    var cvv = $('#cvv').val();
-    var expiredDate = $('#expiredDate').val();
-
-    if (cvv.length == 3) {
-      alert("dd");
     }
 
     $.ajax({
