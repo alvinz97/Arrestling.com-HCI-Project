@@ -1,5 +1,11 @@
 "use strict";
 
+/**
+ * @author [Rusiru Ashan Kulathunga]
+ * @email [support@rusiruofficial.com] 
+ * @create date 2020-09-28 22:53:37
+ * @modify date 2020-09-28 22:53:37
+ */
 // Author: Rusiru Ashan Kulathunga
 // Website: https://www.rusiruofficial.com
 // $(document).ready(function (e) {

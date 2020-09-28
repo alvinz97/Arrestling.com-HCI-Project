@@ -1,3 +1,9 @@
+/**
+ * @author [Rusiru Ashan Kulathunga]
+ * @email [support@rusiruofficial.com] 
+ * @create date 2020-09-28 22:53:37
+ * @modify date 2020-09-28 22:53:37
+ */
 
 // Author: Rusiru Ashan Kulathunga
 // Website: https://www.rusiruofficial.com
@@ -103,6 +109,7 @@ jQuery(document).ready(function ($) {
 
             if (cvv.match(/^[0-9]+$/) == null) {
                 $("#delivery-info-section .cvv").text("Please enter digits only");
+
             }
 
                 i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
