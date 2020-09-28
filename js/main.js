@@ -29,7 +29,6 @@ $("#ad-section .close-btn").click(function () {
 });
 
 
-
 jQuery(document).ready(function ($) {
     "use strict";
 
