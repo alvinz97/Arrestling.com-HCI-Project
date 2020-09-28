@@ -100,7 +100,13 @@ jQuery(document).ready(function ($) {
     var holderName = $('#holderName').val();
     var city = $('#cvv').val();
     var cardNumber = $('#cardNumber').val();
+    var cvv = $('#cvv').val();
     var expiredDate = $('#expiredDate').val();
+
+    if (cvv.length == 3) {
+      alert("dd");
+    }
+
     $.ajax({
       type: "POST",
       url: action,

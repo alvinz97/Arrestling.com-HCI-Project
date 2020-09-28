@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="scss/main.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
+    <link rel="stylesheet" href="vendor/datepicker/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.css">
     <title>Check Out | Arrestling </title>
 </head>
 <body>
@@ -160,14 +161,14 @@
                         <div class="form-group col-md-8">
                             <label for="">Card Number <span class="required"> * </span></label>
                             <input type="text" name="cardNumber" class="form-control" id="cardNumber"
-                                data-rule="card" data-msg="Please enter valid 16 length card number" />
+                                data-rule="card" data-msg="Please enter valid 16 digits length card number" />
                             <p class="validation"></p>
 
                         </div>
                         <div class="form-group col-md-4">
                             <label for="">Expired Date <span class="required"> * </span></label>
                             <input type="text" class="form-control" name="expiredDate" id="expiredDate" data-rule="required"
-                                data-msg="Please enter expire date" />
+                                data-msg="Please enter expire date" data-toggle="datepicker"/>
                             <p class="validation"></p>
 
                         </div>
@@ -394,5 +395,13 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="vendor/datepicker/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js"></script>
 </body>
 </html>
+
+<script>
+    $('[data-toggle="datepicker"]').datepicker({
+    format: 'yyyy-mm'
+    });
+
+</script>
