@@ -6,8 +6,6 @@
  * @create date 2020-09-28 22:53:37
  * @modify date 2020-09-28 22:53:37
  */
-// Author: Rusiru Ashan Kulathunga
-// Website: https://www.rusiruofficial.com
 // $(document).ready(function (e) {
 //     $('#navbar').load('header.html');
 //     $('#footer').load('footer.html');
@@ -48,6 +46,7 @@ jQuery(document).ready(function ($) {
       var i = $(this); // current input
 
       var rule = i.attr('data-rule');
+      console.log(rule);
 
       if (rule !== undefined) {
         var ierror = false; // error flag for current input
