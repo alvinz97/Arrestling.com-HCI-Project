@@ -85,6 +85,10 @@ Common Area | Common Area | Common Area | Common Area |
     }
 }
 
+.section-header {
+    font-size: 15px;
+    font-weight: bold;
+}
 
 /*=========================================================
 Scrollbar style | Scrollbar style | Scrollbar style 
@@ -266,10 +270,6 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         border-radius: 5px;
         border: none;
         width: 100%;
-    }
-    .section-header {
-        font-size: 15px;
-        font-weight: bold;
     }
 
     .section-description {
@@ -588,6 +588,89 @@ Search page Start | Search page Start | Search page Start
 }
 
 
+/*=========================================================
+User Profile | User Profile | User Profile | User Profile
+=========================================================*/
+
+#profile-info-section {
+    #left-section {
+        #user-info {
+            table {
+                .attr {
+                    width: 30%;
+                }
+                .val {
+                    font-weight: 300;
+                    width: 70%;
+                }
+            }
+        }
+
+        #image-section {
+            // padding: 0%;
+            // margin: 0%;
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            form {
+                button {
+                    border: none;
+                    background-color: $color-white;
+                    color: $color-red;
+                }
+
+                label {
+                    cursor: pointer;
+                }
+
+                input[type=file] {
+                    display: none;
+                }
+            }
+        }
+
+        #login-history {
+            table {
+                thead {
+                    tr {
+                        th {
+                            font-weight: 500;
+                        }
+                    }
+                }
+                tbody {
+                    tr {
+                        td {
+                            font-weight: 200;
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #right-section {
+        .item-name {
+            font-size: 10px;
+        }
+
+        table {
+            font-size: 10px;
+
+            td {
+                padding: 0.30rem;
+            }
+        }
+
+        p {
+            font-size: 12px;
+        }
+    }
+}
 
 
 
@@ -596,10 +679,7 @@ Search page Start | Search page Start | Search page Start
 
 
 
-
-
-
-
+    
 
 
 

@@ -61,6 +61,11 @@ Common Area | Common Area | Common Area | Common Area |
   font-size: 11px;
 }
 
+.section-header {
+  font-size: 15px;
+  font-weight: bold;
+}
+
 /*=========================================================
 Scrollbar style | Scrollbar style | Scrollbar style 
 =========================================================*/
@@ -206,10 +211,6 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
   border-radius: 5px;
   border: none;
   width: 100%;
-}
-#delivery-info-section .section-header {
-  font-size: 15px;
-  font-weight: bold;
 }
 #delivery-info-section .section-description {
   font-size: 11px;
@@ -444,6 +445,51 @@ Search page Start | Search page Start | Search page Start
   margin-top: 3px;
   font-size: 15px;
   font-weight: 600;
+}
+
+/*=========================================================
+User Profile | User Profile | User Profile | User Profile
+=========================================================*/
+#profile-info-section #left-section #user-info table .attr {
+  width: 30%;
+}
+#profile-info-section #left-section #user-info table .val {
+  font-weight: 300;
+  width: 70%;
+}
+#profile-info-section #left-section #image-section img {
+  width: 200px;
+  height: 200px;
+}
+#profile-info-section #left-section #image-section form button {
+  border: none;
+  background-color: #ffffff;
+  color: #FF0000;
+}
+#profile-info-section #left-section #image-section form label {
+  cursor: pointer;
+}
+#profile-info-section #left-section #image-section form input[type=file] {
+  display: none;
+}
+#profile-info-section #left-section #login-history table thead tr th {
+  font-weight: 500;
+}
+#profile-info-section #left-section #login-history table tbody tr td {
+  font-weight: 200;
+  font-size: 12px;
+}
+#profile-info-section #right-section .item-name {
+  font-size: 10px;
+}
+#profile-info-section #right-section table {
+  font-size: 10px;
+}
+#profile-info-section #right-section table td {
+  padding: 0.3rem;
+}
+#profile-info-section #right-section p {
+  font-size: 12px;
 }
 
 /*=========================================================
