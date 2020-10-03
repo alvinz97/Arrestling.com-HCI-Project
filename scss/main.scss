@@ -1,3 +1,11 @@
+/**
+ * @author [Rusiru Ashan Kulathunga]
+ * @email [support@rusiruofficial.com] 
+ * @create date 2020-09-28 22:53:37
+ * @modify date 2020-09-28 22:53:37
+ */
+
+
 /*=========================================================
 Colors | Colors | Colors | Colors | Colors | Colors | Colors
 =========================================================*/
@@ -79,7 +87,8 @@ Common Area | Common Area | Common Area | Common Area |
 #devivery-form-submit,
 #coupon-form-submit,
 #tracking-form,
-#login-area {
+#login-area,
+#register-area {
     .validation {
         color: red;
         font-size: 11px;
@@ -730,6 +739,55 @@ Login | Login | Login | Login | Login | Login | Login
 
 }
 
+
+/*=========================================================
+Regsiter | Regsiter | Regsiter | Regsiter | Regsiter | 
+=========================================================*/
+
+#register-area {
+
+    .custom-card {
+        margin-top: 20px;
+    }
+
+    #register-form {
+        label {
+            font-size: 13px;
+        }
+
+        .required {
+            color: $color-red;
+        }
+
+        input {
+            border-radius: 0%;
+            font-size: 13px;
+        }
+
+        ::placeholder {
+            color: $color-ash;
+        }
+    }
+
+    .text-header {
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            line-height: 1.8;
+        }
+    }
+
+    #social-links {
+        img {
+            width: 40px;
+            height: 40px;
+            margin-right: 40px;
+            margin-left: 40px;
+        }
+    }
+
+}
 
 
 
