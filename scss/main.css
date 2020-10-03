@@ -62,7 +62,8 @@ Common Area | Common Area | Common Area | Common Area |
 
 #devivery-form-submit .validation,
 #coupon-form-submit .validation,
-#tracking-form .validation {
+#tracking-form .validation,
+#login-area .validation {
   color: red;
   font-size: 11px;
 }
@@ -70,6 +71,43 @@ Common Area | Common Area | Common Area | Common Area |
 .section-header {
   font-size: 15px;
   font-weight: bold;
+}
+
+form label, form p {
+  font-size: 13px;
+}
+
+form .required {
+  color: #FF0000;
+}
+
+form input {
+  border-radius: 0%;
+  font-size: 13px;
+}
+
+form ::-webkit-input-placeholder {
+  color: #949494;
+}
+
+form :-ms-input-placeholder {
+  color: #949494;
+}
+
+form ::-ms-input-placeholder {
+  color: #949494;
+}
+
+form ::placeholder {
+  color: #949494;
+}
+
+.primary-btn {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 4px 15px 4px 15px;
+  border-radius: 5px;
+  border: none;
 }
 
 /*=========================================================
@@ -230,23 +268,11 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
   color: #949494;
 }
 
-#delivery-info-section form .required {
-  color: #FF0000;
-}
-
 #delivery-info-section .main-success-message {
   display: none;
   border-radius: 0%;
   border: 1px solid #00FF00;
   color: #00FF00;
-}
-
-#delivery-info-section .primary-btn {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 4px 15px 4px 15px;
-  border-radius: 5px;
-  border: none;
 }
 
 #delivery-info-section .primary-btn-custome {
@@ -604,6 +630,49 @@ User Profile | User Profile | User Profile | User Profile
 }
 
 /*=========================================================
+Login | Login | Login | Login | Login | Login | Login
+=========================================================*/
+#login-area .custom-card {
+  margin-top: 60px;
+}
+
+#login-area #login-form label {
+  font-size: 13px;
+}
+
+#login-area #login-form .required {
+  color: #FF0000;
+}
+
+#login-area #login-form input {
+  border-radius: 0%;
+  font-size: 13px;
+}
+
+#login-area #login-form ::-webkit-input-placeholder {
+  color: #949494;
+}
+
+#login-area #login-form :-ms-input-placeholder {
+  color: #949494;
+}
+
+#login-area #login-form ::-ms-input-placeholder {
+  color: #949494;
+}
+
+#login-area #login-form ::placeholder {
+  color: #949494;
+}
+
+#login-area .text-header h3 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  line-height: 1.8;
+}
+
+/*=========================================================
 Responsive | Responsive | Responsive | Responsive | Responsive
 =========================================================*/
 @media (max-width: 1427px) {
@@ -672,6 +741,9 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #home h3 {
     font-size: 1.0rem;
   }
+  #login-area .custom-card {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width: 852px) {
@@ -702,6 +774,9 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #index-page .header-text {
     max-width: 20%;
     font-size: 23px;
+  }
+  #login-area .custom-card {
+    margin-top: 0px;
   }
 }
 
