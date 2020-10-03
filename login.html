@@ -6,3 +6,86 @@
     @modify date 2020-09-28 22:56:28
     @desc [description]
 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="scss/main.css">
+    <link rel="shortcut icon" href="images/logos/fav-icon.png">
+    <title>Login | Arrestling </title>
+</head>
+<body>
+    
+
+    <div class="container mt-5" id="login-area">
+        <div class="row">
+            
+            <div class="col-lg-6 col-md-6 m-auto">
+                <div class="custom-card">
+
+                    <div class="text-header text-center">
+                        <h3>Login</h3>
+                    </div>
+
+                    <form action="" method="post" id="login-form">
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="">Email <span class="required"> * </span></label>
+                                <input type="text" name="email" class="form-control" id="email" data-rule="email"
+                                    data-msg="Please enter valid email" />
+                                <p class="validation"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="">Password <span class="required"> * </span></label>
+                                <input type="password" name="password" class="form-control" id="password" data-rule="required"
+                                    data-msg="Please enter your password" />
+                                    <p class="validation"></p>
+                                    <p class="float-right"> <a href="forgot-password.html">Forgot password ?</a> </p>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-check col-md-12 text-center">
+                                <input class="form-check-input" type="checkbox" name="rememberme" id="rememberme">
+                                <label class="form-check-label" for="rememberme"> Remember me </label>
+                                <p class="validation"></p>
+                            </div>
+                        </div>
+
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-12 text-center">
+                                <button type="submit" class="primary-btn pr-5 pl-5">Login</button>
+                            </div>
+                        </div>
+
+                        <div class="form-row mt-2">
+                            <div class="form-group col-md-12 text-center">
+                                <p class="link">New member? <a href="register.html"> Register</a></p>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="vendor/datepicker/node_modules/@chenfengyuan/datepicker/dist/datepicker.min.js"></script>
+</body>
+</html>

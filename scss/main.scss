@@ -78,7 +78,8 @@ Common Area | Common Area | Common Area | Common Area |
 
 #devivery-form-submit,
 #coupon-form-submit,
-#tracking-form {
+#tracking-form,
+#login-area {
     .validation {
         color: red;
         font-size: 11px;
@@ -88,6 +89,33 @@ Common Area | Common Area | Common Area | Common Area |
 .section-header {
     font-size: 15px;
     font-weight: bold;
+}
+
+form {
+
+    label, p {
+        font-size: 13px;
+    }
+    .required {
+        color: $color-red;
+    }
+
+    input {
+        border-radius: 0%;
+        font-size: 13px;
+    }
+
+    ::placeholder {
+        color: $color-ash;
+    }
+}
+
+.primary-btn {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 4px 15px 4px 15px;
+    border-radius: 5px;
+    border: none;
 }
 
 /*=========================================================
@@ -241,11 +269,6 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         ::placeholder {
             color: $color-ash;
         }
-
-        .required {
-            color: $color-red;
-        }
-
     }
 
     .main-success-message {
@@ -255,13 +278,7 @@ Chack-out page | Chack-out page | Chack-out page | Chack-out page
         color: $color-green;
     }
 
-    .primary-btn {
-        background-color: $color-black;
-        color: $color-white;
-        padding: 4px 15px 4px 15px;
-        border-radius: 5px;
-        border: none;
-    }
+    
 
     .primary-btn-custome {
         background-color: $color-black;
@@ -673,7 +690,45 @@ User Profile | User Profile | User Profile | User Profile
 }
 
 
+/*=========================================================
+Login | Login | Login | Login | Login | Login | Login
+=========================================================*/
 
+#login-area {
+
+    .custom-card {
+        margin-top: 60px;   
+    }
+
+    #login-form {
+        label {
+            font-size: 13px;
+        }
+
+        .required {
+            color: $color-red;
+        }
+
+        input {
+            border-radius: 0%;
+            font-size: 13px;
+        }
+
+        ::placeholder {
+            color: $color-ash;
+        }
+    }
+
+    .text-header {
+        h3 {
+            font-size: 32px;
+            font-weight: 600;
+            letter-spacing: 5px;
+            line-height: 1.8;
+        }
+    }
+
+}
 
 
 
@@ -802,6 +857,13 @@ Responsive | Responsive | Responsive | Responsive | Responsive
             font-size: 1.0rem;
         }
     }
+
+    #login-area {
+
+        .custom-card {
+            margin-top: 20px;
+        }
+    }
 }
 
 @media (max-width: 852px) {
@@ -840,6 +902,12 @@ Responsive | Responsive | Responsive | Responsive | Responsive
         .header-text {
             max-width: 20%;
             font-size: 23px;
+        }
+    }
+
+    #login-area {
+        .custom-card {
+            margin-top: 0px;
         }
     }
 }
