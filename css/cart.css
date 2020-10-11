@@ -1,0 +1,98 @@
+/*All Remove Buttons*/
+.modal-content{
+    background-color: grey;
+    width: 800px;
+    height: 200px;
+    left: 400px;
+    top: 200px;
+    text-align: center;
+    opacity: 98%;
+    
+}
+.deletebtn{
+    background-color: rgb(224, 28, 28);
+    color: white;
+    width: 100px;
+    border-radius: 5px;
+}
+.deletebtn:hover{
+    background-color: rgb(160, 21, 21);
+}
+.cancelbtn{
+    width: 100px;
+    border-radius: 5px;
+}
+@media (max-width: 1200px) {
+    .img_1{
+        max-width: 90%;
+    }
+
+}
+@media (max-width: 992px) {
+    .img_1{
+        max-height: 40%;
+    }
+    .btn{
+        max-width: 40%;
+        font-size: 11px;
+    }
+    .btn1{
+        max-width: 140%;
+        border-radius: 3px;
+        font-size: 15px;
+    }
+    .wep_name{
+        font-size: 15px;
+    }
+    .wep_descrip{
+        font-size: 12px;
+    }
+    .wep_price{
+        font-size: 11px;
+    }
+    .order_sum{
+        font-size: 15px;
+    }
+    .order_total{
+        font-size: 13px;
+    }
+
+}
+@media (max-width: 768px){
+    .btn{
+        max-width: 50px;
+        font-size: 7px;
+        
+    }
+    .btn1{
+        max-width: 70px;
+        font-size: 10px;
+    }
+    .wep_name{
+        font-size: 12px;
+    }
+    .wep_descrip{
+        font-size: 10px;
+    }
+    .order_sum{
+        font-size: 12px;
+    }
+    .order_total{
+        font-size: 10px;
+    }
+}
+@media (max-width: 507px){
+    .wep_descrip{
+        font-size: 7px;
+    }
+    .wep_price{
+        font-size: 9px;
+    }
+}
+@media (max-width: 375px){
+    .img_1{
+        max-width: 30px;
+        max-height: 5%;
+    }
+}
+

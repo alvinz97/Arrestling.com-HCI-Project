@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
     <title>Cart | Arrestling </title>
 </head>
@@ -96,7 +97,218 @@
     <!-- Cart Icon  -->
     <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-bag"></i></a>
     <!-- Cart Icon End -->
+    <h3 class="text-center font-weight-bold">SHOPPING CART</h3>
+
     
+    <!--1st Item & order Summury-->  
+    <div class="container">
+        <div class="checkbox">
+            <label>
+              <input type="checkbox" class="check" id="checkAll"> Check All
+            </label>
+        </div>
+
+       <div class="row">
+
+           <!--1st Item Start-->
+           <div class="col-8 border border-primary">
+            <div class="row">
+                <div class="col-3">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="check">
+                        </label>
+                    </div>  
+    
+                  <img src="images/cart/rug-1.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                </div>
+    
+                <div class="col-5">
+                    <h5 class="wep_name font-weight-bold">STURM RUGGER 9mm</h5>
+                    <p class="wep_descrip font-weight-lighter">The Ruger LC9s is a bit short on features,
+                    but simplicity is for many a virtue. The LC9
+                    family is the LCP architecture scaled up for 
+                    the 9mm round.</p>
+    
+                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn btn-danger" onclick="document.getElementById('id01').style.display='block'">Remove</button>
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <form class="modal-content" action="/action_page.php">
+                          <div class="container">
+                            <h1>Delete Item</h1>
+                            <h3>Are you sure you want to delete this item?</h3>
+                          
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Remove</button>
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+    
+                <div class="wep_price col-4 text-left font-weight-bold">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY : 01</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRICE : $379.00</p>
+                    <p>SHIPPING : $2.40</p>
+    
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL : $381.40</p>
+                </div>
+                
+                
+              </div>
+           </div>
+           <!--1st Item End-->
+
+           <div class="col-1"></div>
+
+           <!--Order Summury Start-->
+           <div class="col-3 border border-primary">
+                <div class="row">
+                    <h4 class="order_sum font-weight-bold text-center">ORDER SUMMURY</h4>
+                    <h5 class="order_total font-weight-bold">TOTAL :$1,882.56</h5>
+                </div>
+
+                <div class="row">
+                    <p></p>
+                </div>
+               
+                <div class="row">
+                    <div class="col-4"></div>
+
+                    <div class="col-4">
+                        <button type="button" class="btn1 btn-warning">BUY</button>
+                    </div>
+
+                    <div class="col-4"></div>   
+
+                </div>         
+           </div>
+           <!--Order Summury End-->
+       </div>
+
+       <div class="row">
+           <p></p>
+       </div>
+
+       <!--2nd Item Start-->
+       <div class="row">
+        <div class="col-8 border border-primary">
+            <div class="row">
+                <div class="col-3">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="check">
+                        </label>
+                    </div> 
+    
+                  <img src="images/cart/m4.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                </div>
+    
+                <div class="col-5">
+                    <h5 class="wep_name font-weight-bold">M4 CARBINE</h5>
+                    <p class="wep_descrip font-weight-lighter">The M4 Carbine is a 5.56×45mm NATO, 
+                        air-cooled, gas-operated, direct impingement, magazine-fed
+                        carbine. It has a 14.5 in (370 mm) barrel and a telescoping
+                        stock.</p>
+    
+                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn btn-danger" onclick="document.getElementById('id01').style.display='block'">Remove</button>
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <form class="modal-content" action="/action_page.php">
+                          <div class="container">
+                            <h1>Delete Item</h1>
+                            <h3>Are you sure you want to delete this item?</h3>
+                          
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Remove</button>
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+    
+                <div class="wep_price col-4 text-left font-weight-bold">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY : 01</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRICE : $700.00</p>
+                    <p>SHIPPING : $20.38</p>
+    
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL : $720.38</p>
+                </div>
+                
+                
+              </div>
+           </div>
+
+       </div>
+       <!--2nd Item End-->
+
+       <div class="row">
+            <p></p>
+       </div>
+       
+       <!--3rd Item Start-->
+       <div class="row">
+        <div class="col-8 border border-primary">
+            <div class="row">
+                <div class="col-3">
+                    <div class="checkbox">
+                        <label>
+                          <input type="checkbox" class="check">
+                        </label>
+                    </div>
+    
+                  <img src="images/cart/AK-47.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                </div>
+    
+                <div class="col-5">
+                    <h5 class="wep_name font-weight-bold">AK-47</h5>
+                    <p class="wep_descrip font-weight-lighter">The AK-47 is a gas-operated, 7.62×39mm assault 
+                        rifle. The AK fires the 7.62×39mm cartridge with a muzzle velocity of
+                        715 m/s (2,350 ft/s).</p>
+    
+                    <button type="button" class="btn btn-success">Checkout</button>
+                    <button type="button" class="btn btn-danger" onclick="document.getElementById('id01').style.display='block'">Remove</button>
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+                        <form class="modal-content" action="/action_page.php">
+                          <div class="container">
+                            <h1>Delete Item</h1>
+                            <h3>Are you sure you want to delete this item?</h3>
+                          
+                            <div class="clearfix">
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="deletebtn">Remove</button>
+                              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                </div>
+    
+                <div class="wep_price col-4 text-left font-weight-bold">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY : 01</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRICE : $750.00</p>
+                    <p>SHIPPING : $30.78</p>
+    
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOTAL : $780.78</p>
+                </div>
+                
+                
+              </div>
+           </div>
+           
+
+
+       </div>
+       <!--3rd Item End-->
+
+    </div>    
+
+
+
     <!-- Body Content End-->
 
     <!-- Footer  -->
@@ -203,6 +415,7 @@
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
