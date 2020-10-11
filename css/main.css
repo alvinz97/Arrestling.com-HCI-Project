@@ -515,8 +515,13 @@ User Profile | User Profile | User Profile | User Profile
 /*=========================================================
 Login | Login | Login | Login | Login | Login | Login
 =========================================================*/
+#login-page {
+  background: #0b1238;
+}
+
 #login-area .custom-card {
   margin-top: 60px;
+  box-shadow: 0 -15px 15px rgba(87, 88, 3, 0.397), 0 -15px 15px rgba(41, 46, 0, 0.192), 0 15px 15px rgba(100, 102, 0, 0.3), 0 15px 15px rgba(91, 107, 0, 0.3);
 }
 #login-area #login-form label {
   font-size: 13px;
@@ -541,8 +546,13 @@ Login | Login | Login | Login | Login | Login | Login
 /*=========================================================
 Regsiter | Regsiter | Regsiter | Regsiter | Regsiter | 
 =========================================================*/
+#register-page {
+  background: #0b1238;
+}
+
 #register-area .custom-card {
   margin-top: 20px;
+  box-shadow: 0 -15px 15px rgba(87, 88, 3, 0.397), 0 -15px 15px rgba(41, 46, 0, 0.192), 0 15px 15px rgba(100, 102, 0, 0.3), 0 15px 15px rgba(91, 107, 0, 0.3);
 }
 #register-area #register-form label {
   font-size: 13px;
@@ -556,6 +566,9 @@ Regsiter | Regsiter | Regsiter | Regsiter | Regsiter |
 }
 #register-area #register-form ::placeholder {
   color: #949494;
+}
+#register-area #register-form .form-group {
+  margin-bottom: 0%;
 }
 #register-area .text-header h3 {
   font-size: 32px;
@@ -711,6 +724,14 @@ Responsive | Responsive | Responsive | Responsive | Responsive
   #index-page .header-text {
     max-width: 23%;
     font-size: 17px;
+  }
+}
+@media (max-width: 450px) {
+  #register-area #social-links img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
   }
 }
 @media (max-width: 400px) {

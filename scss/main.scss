@@ -703,10 +703,19 @@ User Profile | User Profile | User Profile | User Profile
 Login | Login | Login | Login | Login | Login | Login
 =========================================================*/
 
+#login-page {
+    background: #0b1238;
+}
+
+
 #login-area {
 
     .custom-card {
-        margin-top: 60px;   
+        margin-top: 60px;
+        box-shadow: 0 -15px 15px rgba(87, 88, 3, 0.397),
+                    0 -15px 15px rgba(41, 46, 0, 0.192),
+                    0 15px 15px rgba(100, 102, 0, 0.3),
+                    0 15px 15px rgba(91, 107, 0, 0.3);
     }
 
     #login-form {
@@ -744,10 +753,18 @@ Login | Login | Login | Login | Login | Login | Login
 Regsiter | Regsiter | Regsiter | Regsiter | Regsiter | 
 =========================================================*/
 
+#register-page {
+    background: #0b1238;
+}
+
 #register-area {
 
     .custom-card {
         margin-top: 20px;
+        box-shadow: 0 -15px 15px rgba(87, 88, 3, 0.397),
+                    0 -15px 15px rgba(41, 46, 0, 0.192),
+                    0 15px 15px rgba(100, 102, 0, 0.3),
+                    0 15px 15px rgba(91, 107, 0, 0.3);
     }
 
     #register-form {
@@ -766,6 +783,10 @@ Regsiter | Regsiter | Regsiter | Regsiter | Regsiter |
 
         ::placeholder {
             color: $color-ash;
+        }
+
+        .form-group {
+            margin-bottom: 0%;
         }
     }
 
@@ -788,31 +809,6 @@ Regsiter | Regsiter | Regsiter | Regsiter | Regsiter |
     }
 
 }
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1024,6 +1020,19 @@ Responsive | Responsive | Responsive | Responsive | Responsive
         .header-text {
             max-width: 23%;
             font-size: 17px;
+        }
+    }
+}
+
+@media (max-width:450px) {
+    #register-area {
+        #social-links {
+            img {
+                width: 35px;
+                height: 35px;
+                margin-right: 15px;
+                margin-left: 15px;
+            }
         }
     }
 }
