@@ -1,0 +1,31 @@
+/*=========================================================
+Nav bar | Nav bar | Nav bar | Nav bar | Nav bar | Nav bar 
+=========================================================*/
+
+#navbar {
+    border-bottom: 1px solid rgb(221, 221, 221);
+
+    .navbar-brand {
+        font-size: 35px;
+        font-family: Open Sans,
+            Arial,
+            sans-serif;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: $color-primary;
+    }
+
+    .navbar-nav {
+        font-size: 14px;
+
+        .dropdown-menu {
+            z-index: 100;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+
+/*=========================================================
+Chack-out page | Chack-out page | Chack-out page | Chack-out page
+=========================================================*/
+
+#delivery-info-section {
+    form {
+        label {
+            font-size: 13px;
+        }
+        input {
+            border-radius: 0%;
+            font-size: 13px;
+        }
+
+        ::placeholder {
+            color: $color-ash;
+        }
+    }
+
+    .main-success-message {
+        display: none;
+        border-radius: 0%;
+        border: 1px solid $color-green;
+        color: $color-green;
+    }
+
+    
+
+    .primary-btn-custome {
+        background-color: $color-black;
+        color: $color-white;
+        padding: 4px 15px 4px 15px;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+    }
+
+    .section-description {
+        font-size: 11px;
+        font-weight: 500;
+        color: $color-ash;
+    }
+
+    .clearfix {
+        p {
+            font-size: 12px;
+        }
+    }
+
+    .item-name {
+        font-size: 10px;
+    }
+
+    table {
+        font-size: 10px;
+        td {
+            padding: 0.30rem;
+        }
+    }
+    p {
+        font-size: 12px;
+    }
+}

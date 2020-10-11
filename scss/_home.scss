@@ -1,0 +1,132 @@
+/*=========================================================
+Index page start | Index page start | Index page start | Index
+=========================================================*/
+
+#index-page {
+    #home {
+        background: url(../images/main_bg.jpg) center;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        background-blend-mode: overlay;
+        z-index: -1;
+
+        h1 {
+            font-size: 2.9rem;
+            font-weight: 900;
+        }
+
+        h1,
+        h3 {
+            color: $color-white;
+        }
+
+        .overlay {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: rgba(0, 8, 53, 0.719);
+        }
+
+        .fullscreen {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            z-index: 10;
+
+            .squre-box {
+                border: 1px solid $color-white;
+                width: 60%;
+                margin: 0 auto;
+                padding: 15px 5px 15px 5px;
+                z-index: 10;
+            }
+
+            .squre-box-2 {
+                display: none;
+                border: 1px solid $color-white;
+                margin: 0 auto;
+                padding: 10px 5px 10px 5px;
+            }
+
+            i {
+                display: none;
+            }
+
+            .banner-content {
+                .squre-box:hover {
+                    line-height: 1.8;
+                    background-color: #9c9c9c8a;
+                    letter-spacing: 1.5px;
+                    transition: all 0.5s ease-in-out;
+
+                    i {
+                        display: inline;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+
+                .squre-box::after {
+                    transition: all 0.5s ease-in-out;
+
+                    i {
+                        display: none;
+                        transition: all 0.5s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    #custom_card_section {
+        .custom-card {
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px;
+            background-color: white;
+            box-shadow: 0px 10px 30px 0px rgba(138, 185, 45, 0.2);
+
+            h6 {
+                font-weight: 700;
+            }
+
+            p {
+                font-size: .75rem;
+            }
+        }
+    }
+
+    #home_about_right {
+        margin-top: 50px;
+
+        ul li {
+            font-size: 20px;
+            font-weight: 600;
+            padding-top: 10px;
+        }
+    }
+
+    .header-text {
+        margin: 0 auto;
+        font-size: 25px;
+        font-weight: 900;
+        border-bottom: 2px solid $color-black;
+        max-width: 10%;
+        text-transform: uppercase;
+    }
+
+    #course_carousel_slider {
+        .controls-top {
+            a {
+                i {
+                    font-size: 30px;
+                    color: #023766;
+                }
+            }
+        }
+    }
+}

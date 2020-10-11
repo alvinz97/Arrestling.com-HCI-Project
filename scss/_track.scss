@@ -1,0 +1,114 @@
+/*=========================================================
+Track page Start | Track page Start | Track page Start | Track
+=========================================================*/
+
+
+#track {
+    .custom-card {
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .delivery-header {
+            h5 {
+                color: $footer-bg;
+                font-weight: 600;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        .delivery-body {
+            ul {
+                li {
+                    .shipment-discription {
+                        font-size: 16px;
+                    }
+
+                    .time-zoon {
+                        font-size: 12px;
+                        color: $color-ash;
+                    }
+
+                    .final {
+                        color: $color-dark-green;
+                    }
+                }
+            }
+
+            #country-name-section {
+                button {
+                    color: $color-white;
+                    padding: 4px 15px 4px 15px;
+                    border-radius: 5px;
+                    border: none;
+                }
+
+                .country-btn-destinantion {
+                    background-color: rgba(209, 39, 39, 0.699);
+                }
+
+                .country-btn-origin {
+                    background-color: rgb(38, 212, 186);
+                }
+
+                p {
+                    font-size: 12px;
+                    color: rgba(59, 59, 59, 0.867);
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        #ad-section {
+            padding: 0%;
+
+            .close-btn {
+                right: 5px;
+                position: absolute;
+                top: 5px;
+                cursor: pointer;
+
+                :hover {
+                    color: $color-red;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                i {
+                    font-size: 25px;
+                }
+
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                border: 1px solid $color-ash;
+            }
+
+            #ad-text {
+                display: none;
+            }
+        }
+    }
+
+    #tracking-form {
+        .primary-btn {
+            background-color: $color-black;
+            color: $color-white;
+            padding: 4px 15px 4px 15px;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .form-row {
+            input {
+                border-radius: 0%;
+                font-size: 13px;
+            }
+        }
+    }
+}
