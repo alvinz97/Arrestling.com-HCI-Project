@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
     <title>Login | Arrestling </title>
 </head>
@@ -24,62 +24,62 @@
 
 
     <div class="container mt-5" id="login-area">
-        <div class="row">
+        <div class="row mt-5">
 
-            <div class="col-lg-8 col-md-6 m-auto">
+            <div class="col-lg-8 col-md-8 m-auto">
                 <div class="custom-card p-0 m-0" data-aos="zoom-in">
                     <div class="row">
-                      <div class="col-lg-6">
-                        <img src="images/login_bg.jpg" alt="" class="img-fluid">
-                      </div>
-
-                      <div class="col-lg-6">
-                        <div class="text-header text-center">
-                            <h3>Login</h3>
+                        <div class="col-lg-6">
+                            <img src="images/login_bg.jpg" alt="" class="img-fluid">
                         </div>
 
-                        <form action="" method="post" id="login-form">
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="">Email <span class="required"> * </span></label>
-                                    <input type="text" name="email" class="form-control" id="email" data-rule="email"
-                                        data-msg="Please enter valid email" />
-                                    <p class="validation"></p>
-                                </div>
+                        <div class="col-lg-6">
+                            <div class="text-header text-center">
+                                <h3>Login</h3>
                             </div>
 
-                            <div class="form-row">
-                                <div class="form-group col-md-12">
-                                    <label for="">Password <span class="required"> * </span></label>
-                                    <input type="password" name="password" class="form-control" id="password" data-rule="required"
-                                        data-msg="Please enter your password" />
+                            <form action="" method="post" id="login-form" class="pr-4">
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="">Email <span class="required"> * </span></label>
+                                        <input type="text" name="email" class="form-control" id="email" data-rule="email"
+                                            data-msg="Please enter valid email" />
                                         <p class="validation"></p>
-                                        <p class="float-right"> <a href="forgot-password.html">Forgot password ?</a> </p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-row">
-                                <div class="form-check col-md-12 text-center">
-                                    <input class="form-check-input" type="checkbox" name="rememberme" id="rememberme">
-                                    <label class="form-check-label" for="rememberme"> Remember me </label>
-                                    <p class="validation"></p>
+                                <div class="form-row">
+                                    <div class="form-group col-md-12">
+                                        <label for="">Password <span class="required"> * </span></label>
+                                        <input type="password" name="password" class="form-control" id="password" data-rule="required"
+                                            data-msg="Please enter your password" />
+                                            <p class="validation"></p>
+                                            <p class="float-right"> <a href="forgot-password.html">Forgot password ?</a> </p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-row mt-2">
-                                <div class="form-group col-md-12 text-center">
-                                    <button type="submit" class="primary-btn pr-5 pl-5">Login</button>
+                                <div class="form-row">
+                                    <div class="form-check col-md-12 text-center">
+                                        <input class="form-check-input" type="checkbox" name="rememberme" id="rememberme">
+                                        <label class="form-check-label" for="rememberme"> Remember me </label>
+                                        <p class="validation"></p>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="form-row mt-2">
-                                <div class="form-group col-md-12 text-center">
-                                    <p class="link">New member? <a href="register.html"> Register</a></p>
+                                <div class="form-row mt-2">
+                                    <div class="form-group col-md-12 text-center">
+                                        <button type="submit" class="primary-btn pr-5 pl-5">Login</button>
+                                    </div>
                                 </div>
-                            </div>
 
-                        </form>
-                      </div>
+                                <div class="form-row mt-2">
+                                    <div class="form-group col-md-12 text-center">
+                                        <p class="link">New member? <a href="register.html"> Register</a></p>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

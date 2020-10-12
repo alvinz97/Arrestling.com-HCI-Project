@@ -15,7 +15,6 @@
 @import 'register';
 @import 'home';
 @import 'profile';
-@import 'mobile';
 @import 'cart';
 @import 'single_product';
 
@@ -34,3 +33,20 @@ body {
         text-decoration: none;
     }
 }
+
+
+#login-area {
+    height: 100vh;
+    .row {
+        margin-top: 120px;
+    }
+}
+
+#register-area {
+    height: 100vh;
+    .row {
+        margin-top: 50px;
+    }
+}
+
+@import 'mobile';

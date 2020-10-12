@@ -72,7 +72,7 @@ Responsive | Responsive | Responsive | Responsive | Responsive
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.5px) {
     #navbar {
         .navbar-brand {
             font-size: 30px;
@@ -84,6 +84,19 @@ Responsive | Responsive | Responsive | Responsive | Responsive
             .nav-item {
                 margin-right: 10px;
             }
+        }
+    }
+
+    #register-area,
+    #login-area {
+        .custom-card {
+            img {
+                display: none;
+            }
+        }
+
+        form {
+            padding: 20px;;
         }
     }
 }
