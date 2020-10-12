@@ -28,80 +28,84 @@
     <div class="container" id="register-area">
         <div class="row mt-4">
 
-            <div class="col-lg-6 col-md-6 m-auto">
-                <div class="custom-card">
+            <div class="col-lg-10 col-md-10 m-auto">
+                <div class="custom-card p-0 m-0">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="text-header text-center">
+                            <h3>Register</h3>
+                        </div>
 
-                    <div class="text-header text-center">
-                        <h3>Register</h3>
+                        <form action="" method="post" id="register-form">
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="">User Name <span class="required"> * </span></label>
+                                    <input type="text" name="userName" class="form-control" id="userName" data-rule="required"
+                                        data-msg="Please enter valid userName" />
+                                    <p class="validation"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="">Email <span class="required"> * </span></label>
+                                    <input type="text" name="email" class="form-control" id="email" data-rule="email"
+                                        data-msg="Please enter valid email" />
+                                    <p class="validation"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="">Password <span class="required"> * </span></label>
+                                    <input type="password" name="password" class="form-control" id="password"
+                                        data-rule="minlen:6" data-msg="Please enter your password" />
+                                    <p class="validation"></p>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="">Confirm Password <span class="required"> * </span></label>
+                                    <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
+                                        data-rule="required" data-msg="Please enter the same password" />
+                                    <p class="validation"></p>
+                                </div>
+                            </div>
+
+
+                            <div class="form-row mt-2">
+                                <div class="form-group col-md-12 text-center">
+                                    <button type="submit" class="primary-btn pr-5 pl-5">Register</button>
+                                </div>
+                            </div>
+
+                            <div class="form-row text-center" id="social-links">
+
+                                <div class="form-group col-md-12 mt-1">
+                                    <p>Or</p>
+                                    <p>Sign up with</p>
+                                </div>
+
+                                <div class="form-group col-md-12">
+                                    <a href="https://www.google.com"><img src="images/logos/g-plus.png" class="img-fluid" alt=""></a>
+                                    <a href="https://www.facebook.com"><img src="images/logos/facebook.png" class="img-fluid" alt=""></a>
+                                    <a href="https://www.apple.com"><img src="images/logos/apple.png" class="img-fluid" alt=""></a>
+                                </div>
+                            </div>
+
+                            <div class="form-row mt-4">
+                                <div class="form-group col-md-12 text-center">
+                                    <p class="link">Already a member? <a href="login.html"> Login</a></p>
+                                </div>
+                            </div>
+                        </form>
+                      </div>
+                      <div class="col-lg-6">
+                        <img src="images/login_bg.jpg" alt="" class="img-fluid">
+                      </div>
                     </div>
-
-                    <form action="" method="post" id="register-form">
-
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <label for="">User Name <span class="required"> * </span></label>
-                                <input type="text" name="userName" class="form-control" id="userName" data-rule="required"
-                                    data-msg="Please enter valid userName" />
-                                <p class="validation"></p>
-                            </div>
-                        </div>
-
-
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <label for="">Email <span class="required"> * </span></label>
-                                <input type="text" name="email" class="form-control" id="email" data-rule="email"
-                                    data-msg="Please enter valid email" />
-                                <p class="validation"></p>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <label for="">Password <span class="required"> * </span></label>
-                                <input type="password" name="password" class="form-control" id="password"
-                                    data-rule="minlen:6" data-msg="Please enter your password" />
-                                <p class="validation"></p>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group col-md-12">
-                                <label for="">Confirm Password <span class="required"> * </span></label>
-                                <input type="password" name="confirmPassword" class="form-control" id="confirmPassword"
-                                    data-rule="required" data-msg="Please enter the same password" />
-                                <p class="validation"></p>
-                            </div>
-                        </div>
-
-
-                        <div class="form-row mt-2">
-                            <div class="form-group col-md-12 text-center">
-                                <button type="submit" class="primary-btn pr-5 pl-5">Register</button>
-                            </div>
-                        </div>
-
-                        <div class="form-row text-center" id="social-links">
-
-                            <div class="form-group col-md-12 mt-1">
-                                <p>Or</p>
-                                <p>Sign up with</p>
-                            </div>
-
-                            <div class="form-group col-md-12">
-                                <a href="https://www.google.com"><img src="images/logos/g-plus.png" class="img-fluid" alt=""></a>
-                                <a href="https://www.facebook.com"><img src="images/logos/facebook.png" class="img-fluid" alt=""></a>
-                                <a href="https://www.apple.com"><img src="images/logos/apple.png" class="img-fluid" alt=""></a>
-                            </div>
-                        </div>
-
-                        <div class="form-row mt-4">
-                            <div class="form-group col-md-12 text-center">
-                                <p class="link">Already a member? <a href="login.html"> Login</a></p>
-                            </div>
-                        </div>
-
-                    </form>
                 </div>
             </div>
         </div>
