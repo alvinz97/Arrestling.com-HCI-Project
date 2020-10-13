@@ -1,6 +1,6 @@
 /**
  * @author [Rusiru Ashan Kulathunga]
- * @email [support@rusiruofficial.com] 
+ * @email [support@rusiruofficial.com]
  * @create date 2020-09-28 22:53:37
  * @modify date 2020-09-28 22:53:37
  */
@@ -28,10 +28,10 @@ $("#ad-section .close-btn").click(function () {
 jQuery(document).ready(function ($) {
     "use strict";
 
-    // CHECKOUT AREA 
+    // CHECKOUT AREA
     $('#devivery-form-submit').submit(function () {
 
-        
+
         var name = $('#name').val();
         var phone = $('#phone').val();
         var address = $('#address').val();
@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
                             ferror = ierror = true;
                         }
                         break;
-                    
+
                     case 'phone':
                         if (!phoneno.test(i.val())) {
                             ferror = ierror = true;
@@ -99,7 +99,7 @@ jQuery(document).ready(function ($) {
                         }
                         break;
                 }
-                
+
             if (cvv.length > 3) {
                 $("#delivery-info-section .cvv").text("Please enter 3 digits only");
             }
@@ -155,7 +155,7 @@ jQuery(document).ready(function ($) {
         $('#devivery-form-submit .form-group .validation').text('');
     });
 
-    // COUPON AREA 
+    // COUPON AREA
     $('#coupon-form-submit').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false;
@@ -203,14 +203,14 @@ jQuery(document).ready(function ($) {
                 status: 'checkout'
             },
             success: function (data) {
-                
+
             }
         });
         return false;
     });
 
 
-    // TRACKING AREA 
+    // TRACKING AREA
     $('#tracking-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false;
@@ -265,7 +265,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // LOGIN AREA 
+    // LOGIN AREA
     $('#login-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false,
@@ -333,7 +333,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // REGISTER AREA 
+    // REGISTER AREA
     $('#register-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false,
@@ -410,7 +410,7 @@ jQuery(document).ready(function ($) {
 
 
 
-// Cart 
+// Cart
 
 $("#checkAll").click(function () {
     $(".check").prop('checked', $(this).prop('checked'));
@@ -425,24 +425,24 @@ window.onclick = function(event) {
     }
 }
 
-// Single project 
+// Single project
 
-$(document).ready(function() {
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
-});
+// $(document).ready(function() {
+// 	$('.popup-gallery').magnificPopup({
+// 		delegate: 'a',
+// 		type: 'image',
+// 		tLoading: 'Loading image #%curr%...',
+// 		mainClass: 'mfp-img-mobile',
+// 		gallery: {
+// 			enabled: true,
+// 			navigateByImgClick: true,
+// 			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+// 		},
+// 		image: {
+// 			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+// 			titleSrc: function(item) {
+// 				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
+// 			}
+// 		}
+// 	});
+// });
