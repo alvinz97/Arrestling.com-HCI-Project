@@ -429,4 +429,13 @@ $("#confirmModalLink").click(function () {
         fadeDuration: 1000,
         fadeDelay: 1.5
     });
+
+    if ($.modal.isActive()) {
+      $.modal.defaults = {
+        closeExisting: false,
+        escapeClose: false,
+        clickClose: false,
+      }
+
+    }
 });
