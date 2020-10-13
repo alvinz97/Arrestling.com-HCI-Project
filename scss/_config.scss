@@ -146,3 +146,15 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-thumb:hover {
     background: #023766;
 }
+// Confirm Modal 
+
+
+#confirmModal {
+    display: none;
+    height: 200px;
+    padding: 10px;
+
+    a {
+        margin: 15px 15px 0 0;
+    }
+}
