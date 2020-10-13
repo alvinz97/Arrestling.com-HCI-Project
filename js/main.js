@@ -425,6 +425,15 @@ window.onclick = function(event) {
     }
 }
 
+
+// Remove confirmation
+$("#confirmModal").hide();
+$("#confirmModal").modal({
+ fadeDuration: 1000,
+});
+
+
+
 // Single project
 
 // $(document).ready(function() {
