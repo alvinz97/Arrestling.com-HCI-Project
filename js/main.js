@@ -424,18 +424,17 @@ window.onclick = function(event) {
     }
 }
 
-$("#confirmModalLink").click(function () {
+$(".removeBtn").click(function () {
     $("#confirmModal").modal({
-        fadeDuration: 1000,
-        fadeDelay: 1.5
+        fadeDuration: 500,
     });
 
     if ($.modal.isActive()) {
-      $.modal.defaults = {
-        closeExisting: false,
-        escapeClose: false,
-        clickClose: false,
-      }
+        $.modal.defaults = {
+            closeExisting: false,
+            escapeClose: false,
+            clickClose: false,
+        }
 
     }
 });

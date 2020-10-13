@@ -154,6 +154,14 @@ body::-webkit-scrollbar-thumb:hover {
     height: 200px;
     padding: 10px;
 
+    .modal-card {
+        text-align: center;
+
+        .modal-header {
+            display: inline;    
+        }
+    }
+
     a {
         margin: 15px 15px 0 0;
     }

@@ -110,9 +110,7 @@
                                 <div class="col-12">
                                     <div class="form-group text-center">
                                         <label for="upload" class="mr-1" title="Change Image "><i class="fas fa-upload"></i></label>
-                                        <a href="#" id="confirmModalLink">
-                                            <button type="button" class="ml-5 removeBtn" title="Remove Image"><i class="fa fa-trash"></i></button>
-                                        </a>
+                                        <button type="button" class="ml-5 removeBtn" title="Remove Image"><i class="fa fa-trash"></i></button>
                                         <input type="file" name="" id="upload">
                                     </div>
                                 </div>
@@ -313,13 +311,13 @@
     <div id="confirmModal" class="modal">
         <div class="modal-card">
             <div class="modal-header">
-              <h5>Are you sure ?</h5>
-              <p>You won't be able to recover this!</p>
+                <h5>Are you sure ?</h5>
+                <p>You won't be able to recover this!</p>
             </div>
 
             <div class="modal-btns">
-              <button type="button" class="btn btn-dark btn-sm float-left">Close</button>
-              <button type="button" class="btn btn-success btn-sm float-right">Close</button>
+                <a type="button"  class="btn btn-success btn-sm">Yes! Sure</a>
+                <a type="button" class="btn btn-dark btn-sm" rel="modal:close">Close</a>
             </div>
         </div>
     </div>
