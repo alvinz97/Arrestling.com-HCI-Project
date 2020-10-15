@@ -1,5 +1,5 @@
 {
     "compile-hero.disable-compile-files-on-did-save-code": true,
-    "liveServer.settings.port": 5501,
+    "liveServer.settings.port": 5502,
     "python.pythonPath": "C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }
