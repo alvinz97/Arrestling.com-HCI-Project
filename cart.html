@@ -17,7 +17,9 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="vendor/jquery-modal/node_modules/jquery-modal/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
     <title>Cart | Arrestling </title>
 </head>
@@ -129,7 +131,7 @@
                                 but simplicity is for many a virtue. The LC9.</p>
                 
                                 <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="btn btn-danger btn-sm" >Remove</button>
+                                <button type="button" class="removeBtn btn btn-danger btn-sm" >Remove</button>
                             </div>
                 
                             <div class="wep_price col-lg-4 col-md-4 col-sm-12 text-left font-weight-bold">
@@ -164,7 +166,7 @@
                                     air-cooled, gas-operated, direct impingement,.</p>
                 
                                 <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="btn btn-danger btn-sm">Remove</button>
+                                <button type="button" class="removeBtn btn btn-danger btn-sm">Remove</button>
                             </div>
                 
                             <div class="wep_price col-4 text-left font-weight-bold">
@@ -199,7 +201,7 @@
                                     rifle. The AK fires the 7.62×39mm .</p>
                 
                                 <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="btn btn-danger btn-sm" >Remove</button>
+                                <button type="button" class="removeBtn btn btn-danger btn-sm" >Remove</button>
                             </div>
                 
                             <div class="wep_price col-4 text-left font-weight-bold">
@@ -242,7 +244,22 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div> 
+    
+    <!-- Modal -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h5>Are you sure ?</h5>
+                <p>You want to remove this item!</p>
+            </div>
+
+            <div class="modal-btns">
+                <a type="button"  class="btn btn-success btn-sm">Yes! Sure</a>
+                <a type="button" class="btn btn-dark btn-sm" rel="modal:close">Close</a>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -351,7 +368,9 @@
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
+    <script src="vendor/jquery-modal/node_modules/jquery-modal/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 
 </html>
