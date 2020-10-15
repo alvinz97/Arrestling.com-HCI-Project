@@ -115,26 +115,28 @@
                     <!--1st Item Start-->
                     <div class="col-lg-12 col-md-12 col-sm-12 border border-primary mt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="col-3">
                                 <div class="checkbox">
                                     <label>
                                     <input type="checkbox" class="check">
                                     </label>
                                 </div>  
                 
-                            <img src="images/cart/rug-1.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                            <a href="single-product.html">
+                                <img src="images/cart/rug-1.jpg" alt="photo" class="img-fluid rounded">
+                            </a>
                             </div>
                 
-                            <div class="col-lg-5 col-md-5 col-sm-12">
-                                <h5 class="wep_name font-weight-bold">STURM RUGGER 9mm</h5>
+                            <div class="col-5">
+                                <h5 class="wep_name font-weight-bold"> <a href="single-product.html"> STURM RUGGER 9mm </a></h5>
                                 <p class="wep_descrip font-weight-lighter">The Ruger LC9s is a bit short on features,
                                 but simplicity is for many a virtue. The LC9.</p>
                 
-                                <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="removeBtn btn btn-danger btn-sm" >Remove</button>
+                                <button type="button" class="success-btn mt-2" onclick="window.location='checkout.html'">Checkout</button>
+                                <button type="button" class="removeBtn danger-btn mt-2" >Remove</button>
                             </div>
                 
-                            <div class="wep_price col-lg-4 col-md-4 col-sm-12 text-left font-weight-bold">
+                            <div class="wep_price col-4 text-left font-weight-bold">
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;QTY : 01</p>
                                 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PRICE : $379.00</p>
                                 <p>SHIPPING : $2.40</p>
@@ -157,16 +159,19 @@
                                     </label>
                                 </div> 
                 
-                            <img src="images/cart/m4.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                            <a href="single-product.html">
+                                <img src="images/cart/m4.jpg" alt="photo" class="img-fluid rounded">
+                            </a>
+
                             </div>
                 
                             <div class="col-5">
-                                <h5 class="wep_name font-weight-bold">M4 CARBINE</h5>
+                                <h5 class="wep_name font-weight-bold"> <a href="single-product.html"> M4 CARBINE </a></h5>
                                 <p class="wep_descrip font-weight-lighter">The M4 Carbine is a 5.56×45mm NATO, 
                                     air-cooled, gas-operated, direct impingement,.</p>
                 
-                                <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="removeBtn btn btn-danger btn-sm">Remove</button>
+                                <button type="button" class="success-btn mt-2" onclick="window.location='checkout.html'">Checkout</button>
+                                <button type="button" class="removeBtn danger-btn mt-2">Remove</button>
                             </div>
                 
                             <div class="wep_price col-4 text-left font-weight-bold">
@@ -192,16 +197,18 @@
                                     </label>
                                 </div>
                 
-                                <img src="images/cart/AK-47.jpg" alt="photo" class="img_1 rounded float-right" width="150px" height="130px">
+                            <a href="single-product.html">
+                                <img src="images/cart/AK-47.jpg" alt="photo" class="img-fluid rounded">
+                            </a>
                             </div>
                 
                             <div class="col-5">
-                                <h5 class="wep_name font-weight-bold">AK-47</h5>
+                                <h5 class="wep_name font-weight-bold"> <a href="single-product.html"> AK-47 </a></h5>
                                 <p class="wep_descrip font-weight-lighter">The AK-47 is a gas-operated, 7.62×39mm assault 
                                     rifle. The AK fires the 7.62×39mm .</p>
                 
-                                <button type="button" class="btn btn-success btn-sm" onclick="window.location='checkout.html'">Checkout</button>
-                                <button type="button" class="removeBtn btn btn-danger btn-sm" >Remove</button>
+                                <button type="button" class="success-btn mt-2" onclick="window.location='checkout.html'">Checkout</button>
+                                <button type="button" class="removeBtn danger-btn mt-2" >Remove</button>
                             </div>
                 
                             <div class="wep_price col-4 text-left font-weight-bold">
@@ -229,15 +236,13 @@
                         <!--Order Summury Start-->
                         <div class="row">
                             <h4 class="order_sum font-weight-bold text-center">ORDER SUMMURY</h4>
-                            <h5 class="order_total font-weight-bold">TOTAL :$1,882.56</h5>
+                            <h6 class="order_total font-weight-bold mt-3">TOTAL :$1,882.56</h6 >
                         </div>
     
-                        <div class="row">
-                            <div class="col-4"></div>
-                            <div class="col-4">
-                                <button type="button" class="btn btn-sm btn1 btn-warning" onclick="window.location='checkout.html'" >BUY</button>
-                            </div>
-                            <div class="col-4"></div>   
+                        <div class="row text-center mt-3">
+                            <div class="col-12">
+                                <button type="button" class="warning-btn btn1" onclick="window.location='checkout.html'" >BUY ALL</button>
+                            </div> 
                         </div>   
                         <!--Order Summury End-->
                     </div>
@@ -370,7 +375,6 @@
     <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
     <script src="vendor/jquery-modal/node_modules/jquery-modal/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
 </body>
 
 </html>

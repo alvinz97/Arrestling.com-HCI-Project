@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
-    <link rel="stylesheet" href="css/style.css">
     <title>Contact Us | Arrestling </title>
 </head>
 
@@ -115,36 +114,36 @@
             </div>
         </div>
         <div class="col-md-9 mt-5">
-            <form action="">
+            <form action="" id="contact-form">
                 <div class="form-row">
                     <div class="form-group col-md-8 ml-5">
-                        <label class="labelFromName">NAME<span class="required"> * </span></label>
-                        <input type="text" name="firstName" id="firstName" class="form-control">
+                        <label class="text-center">NAME<span class="required"> * </span></label>
+                        <input type="text" name="firstName" id="firstName" class="form-control" data-rule="required" data-msg="Please enter your name">
                         <p class="validation"></p>
                     </div>
                 </div>
                 <div class="form-row mt-2">
                     <div class="form-group col-md-8 ml-5">
-                        <label class="labelFromLastName">LAST NAME<span class="required"> * </span></label>
-                        <input type="text" name="lastName" id="lastName" class="form-control">
+                        <label class="text-center">LAST NAME<span class="required"> * </span></label>
+                        <input type="text" name="lastName" id="lastName" class="form-control" data-rule="required" data-msg="Please enter your last name">
                         <p class="validation"></p>
                     </div>
                 </div>
                 <div class="form-row mt-2">
                     <div class="form-group col-md-8 ml-5">
-                        <label class="labelFromEmail">EMAIL<span class="required"> * </span></label>
-                        <input type="email" name="userEmail" id="userEmail" class="form-control">
+                        <label class="text-center">EMAIL<span class="required"> * </span></label>
+                        <input type="email" name="userEmail" id="userEmail" class="form-control" data-rule="required" data-msg="Please enter your email">
                         <p class="validation"></p>
                     </div>
                 </div>
                 <div class="form-row mt-2">
                     <div class="form-group col-md-8 ml-5">
-                        <label class="labelFromComment">COMMENT<span class="required"> * </span></label>
-                        <textarea id="userReview" name="userReview" rows="7" cols="50" class="form-control"></textarea>
+                        <label class="text-center">COMMENT<span class="required"> * </span></label>
+                        <textarea id="userReview" name="userReview" rows="7" cols="50" class="form-control" data-rule="required" data-msg="Please enter your comment6"></textarea>
                         <p class="validation"></p>
                     </div>
                     <div class="col-md-2">
-                        <button type="button" class="btn btn-warning btnSend">SEND</button>
+                        <button type="submit" class="warning-btn px-4 py-2 btnSend">SEND</button>
                     </div>
                 </div>
             </form>

@@ -3,6 +3,9 @@ Colors | Colors | Colors | Colors | Colors | Colors | Colors
 =========================================================*/
 
 $color-primary: rgb(24, 11, 138);
+$color-warning: #ffee00;
+$color-success: #28a745;
+
 
 $color-red: #FF0000;
 $color-green: #00FF00;
@@ -80,7 +83,8 @@ Common Area | Common Area | Common Area | Common Area |
 #coupon-form-submit,
 #tracking-form,
 #login-area,
-#register-area {
+#register-area,
+#contact-form {
     .validation {
         color: red;
         font-size: 11px;
@@ -117,6 +121,30 @@ form {
     background-color: $color-black;
     color: $color-white;
     padding: 4px 15px 4px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.success-btn {
+    background-color: $color-success;
+    color: $color-white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.danger-btn {
+    background-color: $color-red;
+    color: $color-white;
+    padding: 2px 10px 2px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.warning-btn {
+    background-color: $color-warning;
+    color: $color-black;
+    padding: 2px 10px 2px 10px;
     border-radius: 5px;
     border: none;
 }

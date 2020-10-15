@@ -322,7 +322,7 @@ jQuery(document).ready(function ($) {
             },
             success: function (data) {
                 if (data == 'OK') {
-                    alert('Successfull')
+                    alert('Successful')
                 } else if (data == 'Error') {
                     alert('Error Occur')
                 }
@@ -405,6 +405,61 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
+
+    // TRACKING AREA
+    $('#contact-form').submit(function () {
+        var f = $(this).find('.form-group'),
+            ferror = false;
+
+        f.children('input').each(function () { // run all inputs
+
+            var i = $(this); // current input
+            var rule = i.attr('data-rule');
+
+            if (rule !== undefined) {
+                var ierror = false; // error flag for current input
+                var pos = rule.indexOf(':', 0);
+                if (pos >= 0) {
+                    var exp = rule.substr(pos + 1, rule.length);
+                    rule = rule.substr(0, pos);
+                } else {
+                    rule = rule.substr(pos + 1, rule.length);
+                }
+
+                switch (rule) {
+                    case 'required':
+                        if (i.val() === '') {
+                            ferror = ierror = true;
+                        }
+                        break;
+                }
+                i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+            }
+        });
+
+        if (ferror) return false;
+        else var str = $(this).serialize();
+        var action = $(this).attr('action');
+        if (!action) {
+            action = 'includes/tracking.inc.php';
+        }
+
+        var trackingCode = $('#trackingCode').val();
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: {
+                trackingCode: trackingCode,
+                status: 'tracking'
+            },
+            success: function (data) {
+
+            }
+        });
+        return false;
+    });
+
 });
 
 
@@ -414,15 +469,6 @@ jQuery(document).ready(function ($) {
 $("#checkAll").click(function () {
     $(".check").prop('checked', $(this).prop('checked'));
 });
-
-var modal = document.getElementById('id01');
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 $(".removeBtn").click(function () {
     $("#confirmModal").modal({
@@ -437,4 +483,12 @@ $(".removeBtn").click(function () {
         }
 
     }
+});
+
+
+// Store 
+
+$(".backgroundRow button").click(function () {
+    window.location.replace("cart.html");
+
 });
