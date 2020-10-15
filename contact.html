@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
+    <link rel="stylesheet" href="css/style.css">
     <title>Contact Us | Arrestling </title>
 </head>
 
@@ -91,6 +92,64 @@
     </div>
 
     <!-- Body Content Start-->
+
+    <div class="row backgroundMainRow" data-aos="fade-up">
+        <div class="col-md-3 sideStripeColumn">
+            <div class="sidebarStripe">
+                <div class="row">
+                    <div class="col text-center">
+                        <img src="images/open-email.png" alt="" style="width: 150px;" class="mt-5">
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center p-4">
+                        <label class="cntct">CONTACT US</label>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col text-center p-5">
+                        <p><strong>Email us with any question or inquires</strong></p>
+                        <p><strong>We are happy to answer your question</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9 mt-5">
+            <form action="">
+                <div class="form-row">
+                    <div class="form-group col-md-8 ml-5">
+                        <label class="labelFromName">NAME<span class="required"> * </span></label>
+                        <input type="text" name="firstName" id="firstName" class="form-control">
+                        <p class="validation"></p>
+                    </div>
+                </div>
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8 ml-5">
+                        <label class="labelFromLastName">LAST NAME<span class="required"> * </span></label>
+                        <input type="text" name="lastName" id="lastName" class="form-control">
+                        <p class="validation"></p>
+                    </div>
+                </div>
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8 ml-5">
+                        <label class="labelFromEmail">EMAIL<span class="required"> * </span></label>
+                        <input type="email" name="userEmail" id="userEmail" class="form-control">
+                        <p class="validation"></p>
+                    </div>
+                </div>
+                <div class="form-row mt-2">
+                    <div class="form-group col-md-8 ml-5">
+                        <label class="labelFromComment">COMMENT<span class="required"> * </span></label>
+                        <textarea id="userReview" name="userReview" rows="7" cols="50" class="form-control"></textarea>
+                        <p class="validation"></p>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" class="btn btn-warning btnSend">SEND</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
     <!-- Cart Icon  -->

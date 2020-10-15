@@ -1,0 +1,85 @@
+/*=========================================================
+Contact | Contact | Contact | Contact | Contact | 
+=========================================================*/
+
+.backgroundMainRow{
+    margin-bottom: 2%;
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+
+    .sidebarStripe {
+        background: #c2e3f3;
+        min-height: 100vh;
+
+        .cntct {
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: 500;
+
+        }
+    }
+
+    form {
+        label {
+            background: $dark;
+        }
+    }
+
+    .labelFromLastName {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        background: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .labelFromName {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        background: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .labelFromEmail {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        background: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .labelFromComment {
+        font-size: 15px;
+        font-weight: 400;
+        color: #ffffff;
+        background: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 58px;
+        padding-right: 58px;
+    }
+
+    .btnSend {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
+
+
+
