@@ -17,9 +17,11 @@
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="vendor/aos/node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="vendor/jquery-modal/node_modules/jquery-modal/jquery.modal.min.css" />
     <link rel="stylesheet" href="css/main.min.css">
     <link rel="shortcut icon" href="images/logos/fav-icon.png">
     <title>Profile | Arrestling </title>
+
 </head>
 
 <body>
@@ -92,12 +94,6 @@
 
     <!-- Body Content Start-->
 
-
-    <!-- Cart Icon  -->
-    <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-bag"></i></a>
-    <!-- Cart Icon End -->
-
-
     <div class="container mt-3" id="profile-info-section" data-aos="fade-up">
         <div class="row">
             <!-- Left Info section  -->
@@ -114,8 +110,8 @@
                                 <div class="col-12">
                                     <div class="form-group text-center">
                                         <label for="upload" class="mr-1" title="Change Image "><i class="fas fa-upload"></i></label>
-                                        <button type="submit" class="ml-5" title="Remove Image"><i class="fa fa-trash"></i></button>
-                                        <input type="file" name="" id="upload"> 
+                                        <button type="button" class="ml-5 removeBtn" title="Remove Image"><i class="fa fa-trash"></i></button>
+                                        <input type="file" name="" id="upload">
                                     </div>
                                 </div>
                                 </div>
@@ -279,7 +275,7 @@
                     </div>
 
                     <!-- Item number 05  -->
-                    
+
                     <div class="row mt-3">
                         <div class="col-lg-4 col-md 4 col-4">
                             <img src="images/image.png" alt="" class="img-fluid">
@@ -307,6 +303,24 @@
     </div>
 
 
+    <!-- Cart Icon  -->
+    <a href="cart.html" id="cart-icon"><i class="fas fa-shopping-bag"></i></a>
+    <!-- Cart Icon End -->
+
+    <!-- Modal -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h5>Are you sure ?</h5>
+                <p>You won't be able to recover this!</p>
+            </div>
+
+            <div class="modal-btns">
+                <a type="button"  class="btn btn-success btn-sm">Yes! Sure</a>
+                <a type="button" class="btn btn-dark btn-sm" rel="modal:close">Close</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Body Content End-->
 
@@ -413,6 +427,7 @@
     <script src="vendor/bootstrap/js/bootstrap.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="vendor/aos/node_modules/aos/dist/aos.js"></script>
+    <script src="vendor/jquery-modal/node_modules/jquery-modal/jquery.modal.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 /**
  * @author [Rusiru Ashan Kulathunga]
- * @email [support@rusiruofficial.com] 
+ * @email [support@rusiruofficial.com]
  * @create date 2020-09-28 22:53:37
  * @modify date 2020-09-28 22:53:37
  */
@@ -17,7 +17,6 @@ AOS.init({
     delay: 50,
 });
 
-
 $("#ad-section .close-btn").click(function () {
     $("#ad-section img").hide();
     $("#ad-section .close-btn").hide();
@@ -28,10 +27,10 @@ $("#ad-section .close-btn").click(function () {
 jQuery(document).ready(function ($) {
     "use strict";
 
-    // CHECKOUT AREA 
+    // CHECKOUT AREA
     $('#devivery-form-submit').submit(function () {
 
-        
+
         var name = $('#name').val();
         var phone = $('#phone').val();
         var address = $('#address').val();
@@ -86,7 +85,7 @@ jQuery(document).ready(function ($) {
                             ferror = ierror = true;
                         }
                         break;
-                    
+
                     case 'phone':
                         if (!phoneno.test(i.val())) {
                             ferror = ierror = true;
@@ -99,7 +98,7 @@ jQuery(document).ready(function ($) {
                         }
                         break;
                 }
-                
+
             if (cvv.length > 3) {
                 $("#delivery-info-section .cvv").text("Please enter 3 digits only");
             }
@@ -155,7 +154,7 @@ jQuery(document).ready(function ($) {
         $('#devivery-form-submit .form-group .validation').text('');
     });
 
-    // COUPON AREA 
+    // COUPON AREA
     $('#coupon-form-submit').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false;
@@ -203,14 +202,14 @@ jQuery(document).ready(function ($) {
                 status: 'checkout'
             },
             success: function (data) {
-                
+
             }
         });
         return false;
     });
 
 
-    // TRACKING AREA 
+    // TRACKING AREA
     $('#tracking-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false;
@@ -265,7 +264,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // LOGIN AREA 
+    // LOGIN AREA
     $('#login-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false,
@@ -323,7 +322,7 @@ jQuery(document).ready(function ($) {
             },
             success: function (data) {
                 if (data == 'OK') {
-                    alert('Successfull')
+                    alert('Successful')
                 } else if (data == 'Error') {
                     alert('Error Occur')
                 }
@@ -333,7 +332,7 @@ jQuery(document).ready(function ($) {
     });
 
 
-    // REGISTER AREA 
+    // REGISTER AREA
     $('#register-form').submit(function () {
         var f = $(this).find('.form-group'),
             ferror = false,
@@ -406,43 +405,90 @@ jQuery(document).ready(function ($) {
         return false;
     });
 
+
+    // TRACKING AREA
+    $('#contact-form').submit(function () {
+        var f = $(this).find('.form-group'),
+            ferror = false;
+
+        f.children('input').each(function () { // run all inputs
+
+            var i = $(this); // current input
+            var rule = i.attr('data-rule');
+
+            if (rule !== undefined) {
+                var ierror = false; // error flag for current input
+                var pos = rule.indexOf(':', 0);
+                if (pos >= 0) {
+                    var exp = rule.substr(pos + 1, rule.length);
+                    rule = rule.substr(0, pos);
+                } else {
+                    rule = rule.substr(pos + 1, rule.length);
+                }
+
+                switch (rule) {
+                    case 'required':
+                        if (i.val() === '') {
+                            ferror = ierror = true;
+                        }
+                        break;
+                }
+                i.next('.validation').html((ierror ? (i.attr('data-msg') !== undefined ? i.attr('data-msg') : 'wrong Input') : '')).show('blind');
+            }
+        });
+
+        if (ferror) return false;
+        else var str = $(this).serialize();
+        var action = $(this).attr('action');
+        if (!action) {
+            action = 'includes/tracking.inc.php';
+        }
+
+        var trackingCode = $('#trackingCode').val();
+
+        $.ajax({
+            type: "POST",
+            url: action,
+            data: {
+                trackingCode: trackingCode,
+                status: 'tracking'
+            },
+            success: function (data) {
+
+            }
+        });
+        return false;
+    });
+
 });
 
 
 
-// Cart 
+// Cart
 
 $("#checkAll").click(function () {
     $(".check").prop('checked', $(this).prop('checked'));
 });
 
-var modal = document.getElementById('id01');
+$(".removeBtn").click(function () {
+    $("#confirmModal").modal({
+        fadeDuration: 500,
+    });
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    if ($.modal.isActive()) {
+        $.modal.defaults = {
+            closeExisting: false,
+            escapeClose: false,
+            clickClose: false,
+        }
+
     }
-}
+});
 
-// Single project 
 
-$(document).ready(function() {
-	$('.popup-gallery').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		tLoading: 'Loading image #%curr%...',
-		mainClass: 'mfp-img-mobile',
-		gallery: {
-			enabled: true,
-			navigateByImgClick: true,
-			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-		},
-		image: {
-			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			titleSrc: function(item) {
-				return item.el.attr('title') + '<small>by Marsel Van Oosten</small>';
-			}
-		}
-	});
+// Store 
+
+$(".backgroundRow button").click(function () {
+    window.location.replace("cart.html");
+
 });

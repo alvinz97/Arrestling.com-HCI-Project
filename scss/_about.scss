@@ -1,0 +1,32 @@
+#about-container {
+    .about-container {
+        .about-content {
+            .about-row {
+                .year {
+                    font-style: italic;
+                }
+                h5 {
+                    text-transform: uppercase;
+                }
+
+                .about-hero {
+                    margin-top: 5px;
+                    font-weight: 900;
+                    font-style: italic;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+
+                .list {
+                    margin-left: 17px;
+                    .list-item {
+                        margin-top: 10px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+}
