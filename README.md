@@ -16,8 +16,6 @@ This is a 3rd-year 2nd semester HCI project in which we redesign the arrestling.
  $ git clone : (https://github.com/alvinz97/Arrestling.com-HCI-Project.git)
 ```
 
-   * Then rename the project name to itp
-
 
 ### 2. Requirements
 
