@@ -1,6 +1,18 @@
 #about-container {
     .about-container {
+        .history-content {
+            .history-row {
+                h5 {
+                    text-transform: uppercase;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
         .about-content {
+            
             .about-row {
                 .year {
                     font-style: italic;
