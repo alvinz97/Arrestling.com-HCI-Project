@@ -24,7 +24,7 @@ $("#ad-section .close-btn").click(function () {
 });
 
 
-jQuery(document).ready(function ($) {
+$(document).ready(function () {
     "use strict";
 
     // CHECKOUT AREA
@@ -322,7 +322,7 @@ jQuery(document).ready(function ($) {
             },
             success: function (data) {
                 if (data == 'OK') {
-                    alert('Successful')
+                    window.location.replace("index.html");
                 } else if (data == 'Error') {
                     alert('Error Occur')
                 }
